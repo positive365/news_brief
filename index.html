@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>아침 뉴스 브리핑 2026.04.09 | 유신@JKY</title>
+<title>아침 뉴스 브리핑 2026.04.10 | 유신@JKY</title>
 <meta property="og:type" content="article">
-<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.04.09">
-<meta property="og:description" content="미-이란 아슬아슬 휴전 · 공영주차장 5부제 혼선 · AI 광고 가상인물 표시 의무화 · 테슬라 로보택시 실체 · 차은우 200억 납부 · 이란 국력의 비극 · 전기차 보조금 소진">
+<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.04.10">
+<meta property="og:description" content="호르무즈 통행료 유가 효과 · 외국인 하루 만에 이탈 · 실손 5세대 강제전환 가짜뉴스 · 비트코인 결제 수단 · 트럼프 내부 거래 의혹 · 감사합니다 vs 고맙습니다">
 <meta property="og:site_name" content="유신 아침 뉴스 브리핑">
 <meta property="og:locale" content="ko_KR">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
@@ -60,21 +60,42 @@
   .section-text{font-size:14px;line-height:1.8;color:var(--text-secondary);}
   .section-text b{color:var(--text-primary);font-weight:700;}
 
-  /* 규칙 목록 */
-  .rule-list{padding:11px 18px 13px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:6px;}
-  .rule-item{display:flex;align-items:flex-start;gap:9px;font-size:13.5px;line-height:1.65;color:var(--text-secondary);}
-  .rule-badge{flex-shrink:0;padding:2px 8px;border-radius:5px;font-size:10px;font-weight:700;font-family:'DM Mono',monospace;background:color-mix(in srgb,var(--cc) 12%,transparent);color:var(--cc);margin-top:1px;}
+  /* 팩트체크 배너 */
+  .fact-banner{padding:10px 18px;display:flex;align-items:flex-start;gap:10px;border-bottom:1px solid var(--border);}
+  .fact-false{background:#fef2f2;border:1px solid rgba(192,57,43,0.25);border-radius:8px;padding:9px 13px;flex:1;}
+  .fact-true {background:#f0fdf4;border:1px solid rgba(30,126,110,0.25);border-radius:8px;padding:9px 13px;flex:1;}
+  .fact-label{font-size:10px;font-family:'DM Mono',monospace;font-weight:700;letter-spacing:0.12em;margin-bottom:4px;}
+  .fact-false .fact-label{color:#c0392b;}
+  .fact-true  .fact-label{color:#1e7e6e;}
+  .fact-text{font-size:13px;line-height:1.6;color:var(--text-secondary);}
+  .fact-text b{color:var(--text-primary);font-weight:700;}
+
+  /* 비교 카드 */
+  .compare-row{padding:12px 18px 14px;border-bottom:1px solid var(--border);display:flex;gap:10px;}
+  .cmp-box{flex:1;border-radius:8px;padding:10px 13px;text-align:center;}
+  .cmp-label{font-size:11px;font-weight:700;font-family:'DM Mono',monospace;letter-spacing:0.06em;margin-bottom:5px;}
+  .cmp-text{font-size:13px;line-height:1.65;color:var(--text-secondary);}
 
   /* 인용구 */
   .quote-box{margin:10px 0 4px;padding:12px 15px;background:color-mix(in srgb,var(--cc) 6%,transparent);border-left:3px solid var(--cc);border-radius:0 8px 8px 0;}
   .quote-text{font-size:14px;line-height:1.8;color:var(--text-primary);font-weight:600;font-style:italic;}
-  .quote-src{font-size:11px;font-family:'DM Mono',monospace;color:var(--text-muted);margin-top:6px;letter-spacing:0.06em;}
+  .quote-src{font-size:11px;font-family:'DM Mono',monospace;color:var(--text-muted);margin-top:5px;letter-spacing:0.06em;}
+
+  /* 법률 구조 */
+  .law-steps{padding:11px 18px 13px;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:8px;}
+  .law-step{display:flex;align-items:flex-start;gap:10px;}
+  .law-num{flex-shrink:0;width:24px;height:24px;border-radius:50%;background:var(--cc);color:#fff;font-size:12px;font-weight:700;font-family:'DM Mono',monospace;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+  .law-text{font-size:13.5px;line-height:1.65;color:var(--text-secondary);}
+  .law-text b{color:var(--text-primary);font-weight:700;}
 
   .know-more{padding:10px 18px 12px;background:color-mix(in srgb,var(--cc) 5%,transparent);border-top:1px solid color-mix(in srgb,var(--cc) 18%,transparent);}
   .know-more-label{font-size:9.5px;font-family:'DM Mono',monospace;color:var(--cc);letter-spacing:0.16em;text-transform:uppercase;font-weight:600;margin-bottom:5px;}
   .know-more-text{font-size:13.5px;line-height:1.72;color:var(--text-primary);font-weight:500;}
 
-  /* 카드 컬러 */
+  .word-hero{padding:16px 18px 8px;text-align:center;}
+  .word-vs{font-size:26px;font-weight:900;color:var(--cc);line-height:1;letter-spacing:0.05em;}
+  .word-sub{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;margin-top:4px;letter-spacing:0.1em;}
+
   .c-red   {--cc:#c0392b;} .c-blue  {--cc:#2c5f8a;} .c-green {--cc:#1e7e6e;}
   .c-orange{--cc:#b05a00;} .c-purple{--cc:#6d3fad;} .c-gold  {--cc:#a07840;}
   .c-slate {--cc:#4a5568;} .c-teal  {--cc:#1a6f8a;} .c-rose  {--cc:#a0304a;}
@@ -100,243 +121,266 @@
     <div class="top-bar-title">오늘의 <span>신문 읽기</span></div>
   </div>
   <div class="top-bar-right">
-    <div class="top-bar-date"><small>2026</small>04.09</div>
+    <div class="top-bar-date"><small>2026</small>04.10</div>
     <div class="top-bar-author">유신@JKY</div>
   </div>
 </div>
 
 <div class="chips-bar">
-  <a class="chip ch-red"   href="#n1">🔴 미-이란 휴전</a>
-  <a class="chip ch-blue"  href="#n2">🔵 공영주차장 5부제</a>
-  <a class="chip ch-purple"href="#n3">🟣 AI 광고 표시 의무화</a>
-  <a class="chip ch-orange"href="#n4">🟠 테슬라 로보택시 실체</a>
-  <a class="chip ch-teal"  href="#n5">🟦 전기자전거 수거</a>
-  <a class="chip ch-rose"  href="#n6">🩷 차은우 200억 납부</a>
-  <a class="chip ch-gold"  href="#n7">🟡 이란 국력의 비극</a>
-  <a class="chip ch-green" href="#n8">🟢 전기차 보조금 소진</a>
-  <a class="chip ch-slate" href="#n9">⬛ 러시아 "이란의 승리"</a>
-  <a class="chip ch-sky"   href="#n10">💬 '영포티' 절반이 부정적</a>
+  <a class="chip ch-orange" href="#n1">🟠 호르무즈 통행료 계산</a>
+  <a class="chip ch-red"    href="#n2">🔴 외국인 하루 만에 이탈</a>
+  <a class="chip ch-blue"   href="#n3">🔵 실손 5세대 가짜뉴스</a>
+  <a class="chip ch-green"  href="#n4">🟢 1·2세대 실손 지키기</a>
+  <a class="chip ch-slate"  href="#n5">⬛ 수정헌법 25조</a>
+  <a class="chip ch-teal"   href="#n6">🟦 탈출 늑대 포획 vs 사살</a>
+  <a class="chip ch-purple" href="#n7">🟣 비트코인 결제 수단화</a>
+  <a class="chip ch-red"    href="#n8">🔴 트럼프 내부 거래 의혹</a>
+  <a class="chip ch-rose"   href="#n9">🩷 헌재 사건 사상 최고치</a>
+  <a class="chip ch-sky"    href="#n10">💬 감사합니다 vs 고맙습니다</a>
 </div>
 
 <div class="feed">
 
-  <!-- 01 미-이란 휴전 -->
-  <div class="card c-red" id="n1">
+  <!-- 01 호르무즈 통행료 계산 -->
+  <div class="card c-orange" id="n1">
     <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🔴 국제 · 중동</div><div class="card-num">01 / 10</div></div>
-      <div class="card-source">출처: 경향신문 외</div>
-      <div class="card-title">미-이란 2주 휴전 합의<br>조건도 발효 시점도 여전히 아슬아슬</div>
-    </div>
-    <div class="section">
-      <div class="section-text">미국과 이란이 <b>2주간의 휴전에 합의</b>했지만, 호르무즈 해협 개방의 발효 시점이 불확실하고 양측 모두 "내가 이겼다"고 주장하는 등 실질적 이행까지 안갯속입니다. 이스라엘은 "휴전을 환영하지만 <b>레바논은 이번 합의에 포함되지 않는다</b>"고 못 박으며 헤즈볼라와의 전선은 별개임을 분명히 했습니다.</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">휴전이 '선언'과 '이행' 사이의 거리가 먼 중동 협상의 특성을 다시 보여줍니다. 발효 시점이 불확실한 합의는 에너지 시장에 여전히 불안 요인으로 남아, 유가와 해운 비용의 변동성이 단기간에 가라앉기 어렵습니다. 이스라엘의 레바논 전선 고수 선언은 전쟁이 사실상 다층 구조임을 재확인합니다.</div>
-    </div>
-  </div>
-
-  <!-- 02 공영주차장 5부제 -->
-  <div class="card c-blue" id="n2">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🔵 정책 · 교통</div><div class="card-num">02 / 10</div></div>
-      <div class="card-source">출처: 문화일보 외</div>
-      <div class="card-title">공영주차장 5부제 첫날<br>전기차는 제외? 혼선 속 출발</div>
-    </div>
-    <div class="rule-list">
-      <div class="rule-item"><div class="rule-badge">대상</div>공영주차장만 해당 (민영주차장 제외)</div>
-      <div class="rule-item"><div class="rule-badge">면제</div>주말·공휴일, 장애인 차량, 전기차 제외</div>
-      <div class="rule-item"><div class="rule-badge">공무원</div>공공기관 임직원 차량은 더 강한 <b>2부제</b> 적용</div>
-      <div class="rule-item"><div class="rule-badge">민원인</div>관공서 방문 민원인 차량은 5부제 적용</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 혼선의 이유</div>
-      <div class="know-more-text">전기차가 제외된다는 사실을 모르고 단속 대상으로 착각하거나, 공영·민영 구분을 모르는 운전자들이 많았습니다. 제도 홍보가 충분하지 않은 상태에서 시행된 것이 혼란의 주된 원인으로 꼽힙니다. 시행 초기에는 계도 위주로 운영됩니다.</div>
-    </div>
-  </div>
-
-  <!-- 03 AI 광고 가상인물 표시 -->
-  <div class="card c-purple" id="n3">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🟣 정책 · AI</div><div class="card-num">03 / 10</div></div>
-      <div class="card-source">출처: 헤럴드경제</div>
-      <div class="card-title">AI 만든 가상 의사·교수 광고<br>'가상인물 포함' 표시 의무화</div>
-    </div>
-    <div class="section">
-      <div class="section-text">AI로 생성한 의사·교수·전문가 이미지가 실제 인물처럼 등장하는 광고가 급증하자, 공정거래위원회가 <b>'표시광고지침 개정안'</b>을 마련했습니다. 앞으로 AI 생성 가상인물이 등장하는 광고에는 <b>'가상인물 포함'</b> 등의 문구를 명시적으로 표시해야 합니다. 관계 부처 의견 수렴을 거쳐 확정·시행할 계획입니다.</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">AI 생성 전문가가 추천하는 건강식품·의약품·금융 상품 광고는 소비자를 실제 전문가의 추천으로 오인하게 만들 수 있어, 표시 의무화는 소비자 보호 측면에서 당연한 조치입니다. 다만 '가상인물 포함' 문구가 눈에 잘 띄지 않도록 작게 표시할 경우 실효성 논란이 이어질 수 있습니다.</div>
-    </div>
-  </div>
-
-  <!-- 04 테슬라 로보택시 실체 -->
-  <div class="card c-orange" id="n4">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🟠 기술 · 자동차</div><div class="card-num">04 / 10</div></div>
-      <div class="card-source">출처: 국민일보</div>
-      <div class="card-title">테슬라 로보택시, 사실은<br>중앙 관제센터에서 사람이 원격 조종</div>
-    </div>
-    <div class="section">
-      <div class="section-text">테슬라는 지난해 6월 로보택시를 <b>'운전자 없는 완전 자율주행'</b>으로 공개했습니다. 그러나 이후 테슬라 측이 특정 상황에서 중앙 관제센터의 인간이 원격으로 개입한다는 사실을 시인했습니다. 완전 자율주행과 원격 제어를 겸용한 이 방식은 '완전 자율'이라는 표현과 실제 운용 간의 간극을 드러냅니다.</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">자율주행 기술은 레벨 1(운전 보조)~레벨 5(완전 자율)로 구분됩니다. 원격 인간 개입이 필요한 시스템은 레벨 4 이하입니다. '완전 자율주행'이라는 마케팅 언어와 실제 기술 수준의 괴리는 소비자 오인을 낳을 수 있습니다. 진정한 레벨 5 자율주행이 얼마나 멀리 있는지 보여주는 단면입니다.</div>
-    </div>
-  </div>
-
-  <!-- 05 전기자전거 수거 -->
-  <div class="card c-teal" id="n5">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🟦 교통 · 도시</div><div class="card-num">05 / 10</div></div>
-      <div class="card-source">출처: 경향신문</div>
-      <div class="card-title">서울 서초구, 27일부터<br>'길막' 전기자전거 즉시 수거</div>
-    </div>
-    <div class="rule-list">
-      <div class="rule-item"><div class="rule-badge">수거 대상</div>보도 중앙, 버스정류소 5m 이내, 횡단보도 3m 이내, 자전거도로 방치 전기자전거</div>
-      <div class="rule-item"><div class="rule-badge">목표</div>신고 후 <b>3시간 이내</b> 수거 완료</div>
-      <div class="rule-item"><div class="rule-badge">서울 최초</div>서울시 25개 자치구 중 서초구가 처음 시행</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">공유 전기자전거·킥보드의 무질서한 주차는 보행 약자(시각장애인·휠체어 이용자·노인)에게 특히 위험합니다. 서초구의 즉시 수거 제도가 효과를 입증하면 다른 자치구로 확산될 가능성이 높습니다. 공유 모빌리티 업체의 자체 관리 강화를 유도하는 효과도 기대됩니다.</div>
-    </div>
-  </div>
-
-  <!-- 06 차은우 200억 납부 -->
-  <div class="card c-rose" id="n6">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🩷 연예 · 세금</div><div class="card-num">06 / 10</div></div>
+      <div class="card-meta"><div class="card-tag">🟠 에너지 · 경제</div><div class="card-num">01 / 10</div></div>
       <div class="card-source">출처: 서울신문</div>
-      <div class="card-title">차은우, 역대 연예인 최대<br>200억 추징금 "모두 납부했습니다"</div>
+      <div class="card-title">호르무즈 통행료, 한국에<br>1조원 부담 · 기름값 0.5% 오른다</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">200만 달러</span>
+        <span class="stat-label">초대형 원유운반선<br>1척당 통행료(약 30억)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">389척</span>
+        <span class="stat-label">한국행 원유운반선<br>(2024년 기준)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">+0.5%</span>
+        <span class="stat-label">국내 기름값<br>인상 예상 효과</span>
+      </div>
+    </div>
+    <div class="section" style="padding-top:13px;">
+      <div class="section-text">초대형 원유운반선(200만 배럴급) 1척당 통행료가 <b>약 200만 달러(30억원)</b>로 알려졌습니다. 호르무즈를 거쳐 한국으로 들어오는 선박은 연간 약 1,000척(원유운반선 389척)으로, <b>통행료 부담만 1조원을 훌쩍 넘기는 셈</b>입니다. 이를 기름값에 전가하면 약 <b>0.5% 인상 효과</b>에 그친다는 분석입니다. 예상보다 제한적인 수준이지만, 고유가에 고물가까지 겹친 상황에서 추가 부담은 분명합니다.</div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 시사점</div>
+      <div class="know-more-text">통행료 자체보다 '불확실성 프리미엄'이 더 문제입니다. 이란이 통행료를 언제, 얼마나 올릴지 예측할 수 없는 상황이 지속되면 에너지 계약에 리스크 마진이 쌓여 실제 소비자 부담은 계산보다 더 커질 수 있습니다.</div>
+    </div>
+  </div>
+
+  <!-- 02 외국인 하루 만에 이탈 -->
+  <div class="card c-red" id="n2">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🔴 증시 · 외국인</div><div class="card-num">02 / 10</div></div>
+      <div class="card-source">출처: 매일경제</div>
+      <div class="card-title">외국인, 2.4조 샀다가 하루 만에<br>2조 팔고 나갔다</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">+2.4조원</span>
+        <span class="stat-label">4월 8일<br>외국인 순매수</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">-2조원</span>
+        <span class="stat-label">4월 9일<br>외국인 순매도</span>
+      </div>
+    </div>
+    <div class="section" style="padding-top:13px;">
+      <div class="section-text">8일 2.4조원을 순매수했던 외국인이 9일 하루 만에 다시 2조원어치를 내다 팔았습니다. <b>2주간의 휴전에도 불구하고 중동 지역의 지정학적 불안감이 투자자 심리에 여전히 강하게 남아 있음</b>을 단적으로 보여주는 수치입니다.</div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 시사점</div>
+      <div class="know-more-text">외국인의 단기 급매는 '휴전 이후 최종 합의 불확실성'에 대한 헤지(위험 회피) 행동으로 해석됩니다. 안도 랠리가 지속되려면 2주 내 구체적이고 검증 가능한 협상 성과가 필요합니다. 한쪽 방향으로 크게 쏠렸다가 빠르게 되돌아오는 패턴은 변동성 장세의 전형적인 신호입니다.</div>
+    </div>
+  </div>
+
+  <!-- 03 실손 5세대 강제전환 가짜뉴스 -->
+  <div class="card c-blue" id="n3">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🔵 보험 · 팩트체크</div><div class="card-num">03 / 10</div></div>
+      <div class="card-source">출처: 매일경제 외</div>
+      <div class="card-title">실손보험 5세대 '강제 전환'?<br>사실 아닙니다 — 본인 동의 없으면 불가</div>
+    </div>
+    <div class="fact-banner">
+      <div class="fact-false">
+        <div class="fact-label">❌ 잘못된 정보</div>
+        <div class="fact-text">5세대 실손이 출시되면 <b>기존 가입자가 강제 전환</b>될 수 있다</div>
+      </div>
+      <div class="fact-true">
+        <div class="fact-label">✅ 사실</div>
+        <div class="fact-text"><b>본인 동의 없이는 절대 전환 불가</b>. 기존 계약 유지가 원칙</div>
+      </div>
     </div>
     <div class="section">
-      <div class="section-text">모친이 설립한 법인을 통한 소득세 탈루 의혹으로 <b>역대 연예인 최대 규모인 200억원 이상의 추징금</b>을 통보받았던 차은우가 군 복무 중 SNS 입장문을 통해 납부 사실을 밝혔습니다.</div>
+      <div class="section-text">5세대 실손보험이 다음 달 출시될 예정인 가운데, 보험사가 '강제 전환'시킬 수 있다는 잘못된 안내가 퍼지며 소비자 혼란이 가중됩니다. <b>보험 계약은 가입자의 동의 없이 일방적으로 변경할 수 없습니다.</b> 보험사가 리모델링을 권유할 수는 있지만, 거절해도 아무런 불이익이 없습니다.</div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 대응 방법</div>
+      <div class="know-more-text">보험사가 전환을 강하게 권유하더라도 "현재 계약을 유지하겠다"고 명확히 거절하면 됩니다. 전환 여부는 아래 카드(04번)의 내용을 참고해 자신의 이용 패턴에 맞게 판단하시기 바랍니다.</div>
+    </div>
+  </div>
+
+  <!-- 04 1·2세대 실손 지키기 -->
+  <div class="card c-green" id="n4">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🟢 보험 · 재테크</div><div class="card-num">04 / 10</div></div>
+      <div class="card-source">출처: 아시아경제</div>
+      <div class="card-title">1·2세대 실손, 왜 바꾸면 손해일까?<br>비급여 무제한 + 재가입 주기 없음</div>
+    </div>
+    <div class="compare-row">
+      <div class="cmp-box" style="background:#f0fdf4;border:1px solid rgba(30,126,110,0.2);">
+        <div class="cmp-label" style="color:#1e7e6e;">1·2세대 실손</div>
+        <div class="cmp-text">비급여 <b>사실상 무제한</b> 보장<br>재가입 주기 없음<br>도수치료·비급여 주사 폭넓게 보장<br>보험료 높지만 혜택 강력</div>
+      </div>
+      <div class="cmp-box" style="background:#fef9f0;border:1px solid rgba(176,90,0,0.2);">
+        <div class="cmp-label" style="color:#b05a00;">5세대 실손</div>
+        <div class="cmp-text">비급여 보장 <b>대폭 축소</b><br>재가입 주기 있음<br>과잉 진료 항목 대부분 제외<br>보험료 낮지만 혜택 제한적</div>
+      </div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 누가 유지하고, 누가 전환해야 할까?</div>
+      <div class="know-more-text"><b>유지 유리</b>: 병원을 자주 가거나 도수치료·비급여 치료를 받는 분. 현재 혜택이 보험료를 충분히 상쇄하는 경우.<br><b>전환 고려</b>: 병원을 거의 안 가고 보험료 부담을 줄이고 싶은 분. 단, 전환 전 전문가 상담을 권장합니다.</div>
+    </div>
+  </div>
+
+  <!-- 05 수정헌법 25조 -->
+  <div class="card c-slate" id="n5">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">⬛ 정치 · 법률</div><div class="card-num">05 / 10</div></div>
+      <div class="card-source">출처: 경향신문</div>
+      <div class="card-title">미국 수정헌법 25조<br>탄핵보다 요건이 더 까다로운 '대통령 해임'</div>
+    </div>
+    <div class="law-steps">
+      <div class="law-step">
+        <div class="law-num">1</div>
+        <div class="law-text"><b>부통령 + 내각 과반수</b>가 동의해 의회에 서한 → 대통령 권한 일시 정지</div>
+      </div>
+      <div class="law-step">
+        <div class="law-num">2</div>
+        <div class="law-text">대통령이 <b>이의 제기</b> 시 → 상·하원 모두 <b>3분의 2 이상</b> 찬성해야 해임 확정</div>
+      </div>
+      <div class="law-step">
+        <div class="law-num">비교</div>
+        <div class="law-text">탄핵: 하원 과반 + 상원 3분의 2 → 25조보다 발동은 쉽지만, 25조는 <b>상·하원 모두 3분의 2</b> 필요해 실질적으로 더 어렵다</div>
+      </div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 왜 지금 화제?</div>
+      <div class="know-more-text">트럼프 2기 행정부에서 대통령의 독단적 결정이 늘어나자, 내각과 부통령이 25조를 발동할 수 있는지에 대한 논의가 미국 정가에서 간간이 거론되고 있습니다. 그러나 역사상 실제로 발동된 적은 없습니다.</div>
+    </div>
+  </div>
+
+  <!-- 06 탈출 늑대 포획 vs 사살 -->
+  <div class="card c-teal" id="n6">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🟦 동물 · 환경</div><div class="card-num">06 / 10</div></div>
+      <div class="card-source">출처: 국민일보 · 김봉균 공주대 교수</div>
+      <div class="card-title">탈출 늑대 '늑구' — 사살 말고<br>포획해야 하는 이유</div>
+    </div>
+    <div class="section">
+      <div class="section-text">인공 증식된 늑대 '늑구'가 탈출하자 사살 논의가 나왔지만, 전문가는 다르게 봅니다. 공주대 김봉균 교수는 <b>"인공 증식된 개체로 오랫동안 사람과 우호적 관계를 형성해왔고, 무리가 아닌 단독 개체라면 들개와 다를 바 없어 인명 피해 가능성은 낮다"</b>고 분석했습니다. 가축 피해는 생길 수 있지만, 그것이 사살의 이유가 되어서는 안 된다는 입장입니다.</div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 시사점</div>
+      <div class="know-more-text">야생동물 탈출 시 '사살'이 아닌 '포획'을 원칙으로 하는 것은 동물 복지와 생태계 보전의 기본 원칙입니다. 특히 인공 증식 개체는 야생 복귀 가능성이 있는 만큼, 사살 전에 포획·안전 조치를 우선 시도해야 합니다.</div>
+    </div>
+  </div>
+
+  <!-- 07 비트코인 결제 수단 -->
+  <div class="card c-purple" id="n7">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🟣 가상자산 · 국제</div><div class="card-num">07 / 10</div></div>
+      <div class="card-source">출처: 문화일보</div>
+      <div class="card-title">이란 "호르무즈 통행료,<br>비트코인으로 몇 초 안에 결제"</div>
     </div>
     <div class="section">
       <div class="quote-box">
-        <div class="quote-text">"국세청의 절차와 결과를 존중하며, 관련 세금을 모두 납부하였습니다."</div>
-        <div class="quote-src">— 차은우 SNS 입장문</div>
+        <div class="quote-text">"호르무즈 통과 신청 승인 후, 선박은 몇 초 안에 비트코인으로 결제해야 한다."</div>
+        <div class="quote-src">— 이란 외무부 대변인</div>
       </div>
+    </div>
+    <div class="section">
+      <div class="section-text">이란이 비트코인을 결제 수단으로 요구하는 이유는 명확합니다. 달러 결제는 미국 제재에 의해 <b>추적되거나 압류될 수 있지만</b>, 비트코인은 중앙화된 기관 없이 이전이 가능해 제재 회피 수단으로 활용할 수 있습니다.</div>
+    </div>
+    <div class="know-more">
+      <div class="know-more-label">💡 시사점</div>
+      <div class="know-more-text">이란의 이번 요구는 비트코인이 단순 투자 자산을 넘어 <b>국제 제재 우회 결제 수단</b>으로 실제 사용되는 첫 공식 사례에 가깝습니다. 이는 암호화폐 규제 논의와 국제 금융 질서 재편 논쟁을 동시에 자극하는 사건입니다.</div>
+    </div>
+  </div>
+
+  <!-- 08 트럼프 내부 거래 의혹 -->
+  <div class="card c-red" id="n8">
+    <div class="card-header">
+      <div class="card-meta"><div class="card-tag">🔴 국제 · 금융</div><div class="card-num">08 / 10</div></div>
+      <div class="card-source">출처: 중앙일보</div>
+      <div class="card-title">휴전 미리 알고 수십만 달러 수익?<br>트럼프 행정부 내부 거래 의혹</div>
+    </div>
+    <div class="section">
+      <div class="section-text">미국과 이란의 휴전을 <b>정확히 예측해 예측 시장(prediction market)에서 수십만 달러의 수익을 올린 사례</b>들이 드러났습니다. 이를 두고 <b>트럼프 행정부 관계자가 내부 정보를 미리 활용해 부정 거래를 했다는 의혹</b>이 제기되고 있습니다.</div>
     </div>
     <div class="know-more">
       <div class="know-more-label">💡 알아두면 좋은 것</div>
-      <div class="know-more-text">법인을 통한 소득세 탈루는 연예인·스포츠 스타 등 고소득 개인이 자주 적발되는 유형입니다. 개인 소득을 법인 수익으로 돌려 세율 차이를 활용하는 방식인데, 국세청이 이를 부당 행위로 판단하면 추징과 가산세가 부과됩니다. 납부로 법적 분쟁은 마무리되지만, 군 복무 중 입장을 밝혀야 했던 것은 이례적인 상황입니다.</div>
+      <div class="know-more-text">예측 시장(Prediction Market)은 특정 사건의 발생 확률에 베팅하는 플랫폼으로, Polymarket 등이 대표적입니다. 정부 내부자가 미공개 정보를 이용해 베팅하는 것은 증권 내부자 거래와 유사한 구조의 위법 행위로 볼 수 있어, 미국 의회와 규제 당국이 주목하고 있습니다.</div>
     </div>
   </div>
 
-  <!-- 07 이란 국력의 비극 -->
-  <div class="card c-gold" id="n7">
+  <!-- 09 헌재 사건 최고치 -->
+  <div class="card c-rose" id="n9">
     <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🟡 국제 · 역사</div><div class="card-num">07 / 10</div></div>
-      <div class="card-source">출처: 매일경제 칼럼</div>
-      <div class="card-title">석유 4위·가스 2위 이란<br>선진국 될 기회 두 번을 스스로 날렸다</div>
+      <div class="card-meta"><div class="card-tag">🩷 사법 · 사회</div><div class="card-num">09 / 10</div></div>
+      <div class="card-source">출처: 헤럴드경제</div>
+      <div class="card-title">'툭하면 헌재' — 올해 접수 사건<br>연간 1.5만건↑ 사상 최고치 예고</div>
     </div>
     <div class="stat-row">
       <div class="stat-item">
-        <span class="stat-val">9,000만</span>
-        <span class="stat-label">이란 인구</span>
+        <span class="stat-val">747건</span>
+        <span class="stat-label">2월말까지<br>접수 사건 수</span>
       </div>
       <div class="stat-item">
-        <span class="stat-val">세계 4위</span>
-        <span class="stat-label">석유 매장량</span>
+        <span class="stat-val">322건</span>
+        <span class="stat-label">재판소원 도입<br>한 달 미만 접수</span>
       </div>
       <div class="stat-item">
-        <span class="stat-val">세계 2위</span>
-        <span class="stat-label">천연가스 매장량</span>
+        <span class="stat-val">1.5만건+</span>
+        <span class="stat-label">연간 추가<br>예상 사건</span>
       </div>
     </div>
     <div class="section" style="padding-top:13px;">
-      <div class="section-text">이란은 인구 9,000만명에 석유 세계 4위·천연가스 세계 2위의 자원 대국으로, 최강대국이 될 기반을 갖추고 있었습니다. 이슬람혁명 당시 한국과 GDP가 같았으나 지금은 한국의 4분의 1에도 못 미칩니다. 칼럼니스트는 <b>팔레비 왕조의 실정</b>과 <b>호메이니의 이슬람혁명</b>이 20세기 선진국 도약의 기회 두 번을 날린 결정적 원인이라고 분석했습니다.</div>
+      <div class="section-text">2월 말까지 접수된 헌재 사건만 747건에 달하고, 지난달 12일 새로 도입된 '재판소원' 제도만으로 한 달도 안 돼 322건이 접수됐습니다. 현 추세라면 <b>연간 다뤄야 할 사건이 1만 5,000건 이상 늘어날 수 있습니다.</b></div>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">이란의 사례는 자원이 국력의 충분조건이 아님을 보여줍니다. 정치 체제와 지도자의 선택이 국가의 운명을 얼마나 크게 바꿀 수 있는지를 극명하게 드러내는 사례입니다. 지금 이란이 미국과 전쟁을 벌이는 것도, 결국 수십 년간 누적된 정치적 실패의 연장선에 있다는 분석입니다.</div>
+      <div class="know-more-label">💡 재판소원이란?</div>
+      <div class="know-more-text">법원의 재판 결과 자체를 헌법재판소에 심판 청구할 수 있는 제도입니다. 기존에는 법률의 위헌성만 다툴 수 있었지만, 재판소원이 도입되면 법원 판결이 기본권을 침해했는지도 헌재가 판단할 수 있게 됩니다. 제도 자체는 긍정적이지만 헌재의 업무 폭증이 우려됩니다.</div>
     </div>
   </div>
 
-  <!-- 08 전기차 보조금 소진 -->
-  <div class="card c-green" id="n8">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">🟢 전기차 · 정책</div><div class="card-num">08 / 10</div></div>
-      <div class="card-source">출처: 문화일보</div>
-      <div class="card-title">전기차 보조금, 지자체 45곳 이미 소진<br>1~3월에만 8만 3천대 — 작년比 151%↑</div>
-    </div>
-    <div class="stat-row">
-      <div class="stat-item">
-        <span class="stat-val">45곳</span>
-        <span class="stat-label">보조금 소진<br>지자체 수</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-val">60곳</span>
-        <span class="stat-label">90% 이상<br>소진 지자체</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-val">+150.9%</span>
-        <span class="stat-label">1~3월 전기차<br>등록 증가율</span>
-      </div>
-    </div>
-    <div class="section" style="padding-top:13px;">
-      <div class="section-text">4월도 채 되기 전에 45개 지자체에서 전기차 구매 보조금이 완전 소진됐습니다. 지난해 등록된 전기차는 22만대로 전년 대비 50.1% 증가했고, 올해 1~3월에만 8만 3,000대가 등록돼 작년 같은 기간보다 <b>150.9% 폭증</b>했습니다. 수요가 보조금 예산을 압도하는 구조입니다.</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">보조금 소진이 빠를수록 예산 배정 시기(연초)에 빠르게 신청하는 소비자와 늦게 신청하는 소비자 간 불평등이 커집니다. 정부가 보조금 총액을 늘리거나 지급 방식을 개편하지 않으면 "신청 전쟁"이 매년 반복될 것입니다. 전기차 전환 속도가 빠른 만큼 충전 인프라 확충도 시급한 과제입니다.</div>
-    </div>
-  </div>
-
-  <!-- 09 러시아 "이란의 승리" -->
-  <div class="card c-slate" id="n9">
-    <div class="card-header">
-      <div class="card-meta"><div class="card-tag">⬛ 국제 · 지정학</div><div class="card-num">09 / 10</div></div>
-      <div class="card-source">출처: 매일경제</div>
-      <div class="card-title">러시아 "이란의 승리"<br>피해 배상·핵 유지·호르무즈 통제권 모두 인정받아</div>
-    </div>
-    <div class="section">
-      <div class="section-text">러시아 외무부 대변인이 라디오 인터뷰에서 이번 휴전을 <b>"이란의 승리"</b>라고 규정했습니다. 푸틴의 최측근인 국가안보회의 부의장도 이란이 <b>① 피해 배상 논의 포함 ② 핵프로그램 유지 ③ 호르무즈 통제권 유지</b>를 사실상 인정받은 것이 이란의 승리 증거라고 주장했습니다.</div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      <div class="know-more-text">러시아가 이번 휴전을 "미국의 패배"로 프레임화하는 것은 우크라이나 전쟁 맥락에서 자국의 대미 저항 서사를 강화하려는 목적이 있습니다. 실제로 이란이 핵프로그램과 호르무즈 통제권을 협상 테이블에서 지켰다면, 미국이 군사적 우위에도 불구하고 전략적 목표를 달성하지 못한 것은 사실입니다.</div>
-    </div>
-  </div>
-
-  <!-- 10 영포티 인식 -->
+  <!-- 10 감사합니다 vs 고맙습니다 -->
   <div class="card c-sky" id="n10">
     <div class="card-header">
-      <div class="card-meta"><div class="card-tag">💬 사회 · 문화</div><div class="card-num">10 / 10</div></div>
-      <div class="card-source">출처: 국민일보 · 한국리서치</div>
-      <div class="card-title">'영포티' 알고 있는 사람 85%<br>하지만 절반은 "부정적으로 본다"</div>
+      <div class="card-meta"><div class="card-tag">💬 우리말 · 문화</div><div class="card-num">10 / 10</div></div>
+      <div class="card-source">출처: 중앙일보 · 우리말 바루기</div>
+      <div class="card-title">오늘의 한 단어</div>
     </div>
-    <div class="stat-row">
-      <div class="stat-item">
-        <span class="stat-val">85%</span>
-        <span class="stat-label">영포티 인지율<br>(성인 1000명 중)</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-val">50%</span>
-        <span class="stat-label">영포티 인식<br>'부정적' 비율</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-val">63%</span>
-        <span class="stat-label">2030 남성<br>부정 비율(최고)</span>
-      </div>
+    <div class="word-hero">
+      <div class="word-vs">감사합니다 vs 고맙습니다</div>
+      <div class="word-sub">둘 다 맞습니다 — 뉘앙스의 차이</div>
     </div>
-    <div class="section" style="padding-top:13px;">
-      <div class="section-text">'영포티(Young Forty)'를 들어본 사람은 85%에 달하지만, 그 중 <b>50%는 부정적으로 인식</b>하는 것으로 나타났습니다. 특히 <b>2030 남성에서 부정 비율이 63%로 가장 높았습니다.</b> 한국리서치가 지난 2월 성인 남녀 1,000명을 대상으로 조사한 결과입니다.</div>
+    <div class="section">
+      <div class="section-text">두 표현은 대부분의 경우 <b>서로 바꿔 써도 무방</b>합니다. 굳이 구분하자면 '감사합니다'는 <b>좀 더 격식체</b>에 많이 쓰이는 경향이 있습니다. 한자어가 더 고급스럽고 정중해 보이는 '한자말 강세 현상'이 반영된 것입니다.</div>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 왜 부정적으로 볼까?</div>
-      <div class="know-more-text">'영포티'는 40대임에도 젊게 소비하고 자기 자신에게 투자하는 세대를 뜻하는 신조어입니다. 부정적 인식의 배경에는 "나이에 맞지 않는 행동"이라는 시선, 또는 경제적 여유가 전제된 라이프스타일에 대한 상대적 박탈감이 작용하는 것으로 분석됩니다. 2030 남성의 부정 비율이 가장 높다는 점이 흥미롭습니다.</div>
+      <div class="know-more-label">💡 오해 하나 바로잡기</div>
+      <div class="know-more-text">'감사(感謝)'가 일본어에서 온 말이라는 주장이 있지만, <b>사실이 아닙니다.</b> '感謝'는 오래된 한자 어휘로, 일본어와 한국어 모두 독립적으로 사용해 온 표현입니다. '고맙습니다'는 순우리말에서, '감사합니다'는 한자어에서 온 표현이니 두 말 모두 자랑스럽게 사용하면 됩니다.</div>
     </div>
   </div>
 
 </div><!-- /feed -->
 
 <div class="page-footer">
-  <p>신문에서 알게 된 것들을 함께 나눕니다.<br>유신@JKY · 2026.04.09</p>
+  <p>신문에서 알게 된 것들을 함께 나눕니다.<br>유신@JKY · 2026.04.10</p>
 </div>
 
 </body>
