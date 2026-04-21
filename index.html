@@ -3,210 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.04.21">
-<meta property="og:description" content="北 집속탄 · 에르메스 1조 · GDP 부채율 · K드라마 냉각 · 호르무즈 유조선 · HBM 소캠2">
+<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.04.22">
+<meta property="og:description" content="코스피 사상 최고가 · 헤딩 뇌 손상 · 세브란스 로봇수술 5만건 · 황희찬 EPL 강등 · 초코파이 러시아 2000억">
 <meta property="og:site_name" content="유신 아침 뉴스 브리핑">
-<title>📰 아침 뉴스 브리핑 2026.04.21</title>
+<title>아침 뉴스 브리핑 2026.04.22</title>
 <style>
   :root {
-    --bg:#f0f2f6; --surface:#fff; --border:#dde2ec;
-    --accent:#2c5f8a; --text-primary:#0f1217;
-    --text-secondary:#2c3348; --text-muted:#7a8499;
-    --radius:14px;
+    --bg: #f0f2f6;
+    --surface: #ffffff;
+    --border: #dde2ec;
+    --accent: #2c5f8a;
+    --text-primary: #0f1217;
+    --text-secondary: #2c3348;
+    --text-muted: #7a8499;
+    --radius: 14px;
   }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--bg); font-family:'Apple SD Gothic Neo','Noto Sans KR',sans-serif;
-    color:var(--text-primary); font-size:15px; line-height:1.65; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: var(--text-primary); font-size: 15px; line-height: 1.65; }
 
-  /* ── 색상 클래스 ── */
-  .c-red    { --cc:#c0392b; }
-  .c-blue   { --cc:#2c5f8a; }
-  .c-green  { --cc:#1e7e6e; }
-  .c-orange { --cc:#b05a00; }
-  .c-purple { --cc:#6d3fad; }
-  .c-gold   { --cc:#a07840; }
-  .c-slate  { --cc:#4a5568; }
-  .c-teal   { --cc:#1a6f8a; }
-  .c-rose   { --cc:#a0304a; }
-  .c-sky    { --cc:#1a6fd4; }
+  /* 색상 클래스 */
+  .c-red    { --cc: #c0392b; }
+  .c-blue   { --cc: #2c5f8a; }
+  .c-green  { --cc: #1e7e6e; }
+  .c-orange { --cc: #b05a00; }
+  .c-purple { --cc: #6d3fad; }
+  .c-gold   { --cc: #a07840; }
+  .c-slate  { --cc: #4a5568; }
+  .c-teal   { --cc: #1a6f8a; }
+  .c-rose   { --cc: #a0304a; }
+  .c-sky    { --cc: #1a6fd4; }
 
-  /* ── 헤더 ── */
+  /* 헤더 */
   .site-header {
-    position:sticky; top:0; z-index:100;
-    background:var(--accent); color:#fff;
-    padding:12px 16px 10px;
-    display:flex; justify-content:space-between; align-items:flex-end;
-    box-shadow:0 2px 8px rgba(0,0,0,.18);
+    position: sticky; top: 0; z-index: 100;
+    background: var(--accent);
+    padding: 12px 16px;
+    display: flex; justify-content: space-between; align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.18);
   }
-  .header-left .eyebrow { font-size:11px; opacity:.75; letter-spacing:.06em; }
-  .header-left .title   { font-size:18px; font-weight:700; line-height:1.2; }
-  .header-right { text-align:right; font-size:12px; opacity:.8; line-height:1.5; }
+  .header-left .eyebrow { font-size: 10px; color: rgba(255,255,255,.65); letter-spacing: .08em; text-transform: uppercase; }
+  .header-left .site-title { font-size: 17px; font-weight: 700; color: #fff; letter-spacing: -.02em; }
+  .header-right { text-align: right; }
+  .header-right .hdate { font-size: 12px; color: rgba(255,255,255,.75); }
+  .header-right .hauth { font-size: 11px; color: rgba(255,255,255,.5); margin-top: 2px; }
 
-  /* ── 칩 바 ── */
+  /* 칩 바 */
   .chip-bar {
-    background:#fff; border-bottom:1px solid var(--border);
-    padding:8px 12px; display:flex; gap:6px;
-    overflow-x:auto; -webkit-overflow-scrolling:touch;
-    scrollbar-width:none; white-space:nowrap;
+    position: sticky; top: 52px; z-index: 90;
+    background: rgba(240,242,246,.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 12px;
+    display: flex; gap: 6px; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
   }
-  .chip-bar::-webkit-scrollbar { display:none; }
-  .chip { display:inline-flex; align-items:center; gap:4px;
-    padding:4px 10px; border-radius:20px; font-size:12px; font-weight:600;
-    text-decoration:none; border:1px solid var(--border);
-    color:var(--text-secondary); background:#f8f9fb; }
-  .chip:hover { opacity:.75; }
+  .chip-bar::-webkit-scrollbar { display: none; }
+  .chip {
+    white-space: nowrap; font-size: 12px; font-weight: 600;
+    padding: 4px 10px; border-radius: 20px;
+    text-decoration: none; transition: opacity .15s;
+    background: #fff; border: 1px solid var(--border);
+    color: var(--text-secondary);
+  }
+  .chip:hover { opacity: .75; }
+  .ch-red    { background: #fdecea; border-color: #f5b0ab; color: #c0392b; }
+  .ch-blue   { background: #e8f0f8; border-color: #a8c0d8; color: #2c5f8a; }
+  .ch-green  { background: #e6f5f2; border-color: #8ecfc6; color: #1e7e6e; }
+  .ch-orange { background: #fdf0e0; border-color: #e0b070; color: #b05a00; }
+  .ch-purple { background: #f1eaf8; border-color: #c0a0e0; color: #6d3fad; }
+  .ch-gold   { background: #faf3e6; border-color: #d4b88a; color: #a07840; }
+  .ch-slate  { background: #eef0f3; border-color: #a8b0c0; color: #4a5568; }
+  .ch-teal   { background: #e4f3f8; border-color: #80c0d8; color: #1a6f8a; }
+  .ch-rose   { background: #fceef2; border-color: #e0a0b8; color: #a0304a; }
+  .ch-sky    { background: #e4eefa; border-color: #80a8e8; color: #1a6fd4; }
 
-  /* ── 섹션 구분 제목 ── */
-  .section-title {
-    margin:20px 16px 8px;
-    font-size:12px; font-weight:700; letter-spacing:.08em;
-    color:var(--text-muted); text-transform:uppercase;
-    display:flex; align-items:center; gap:8px;
-  }
-  .section-title::after {
-    content:''; flex:1; height:1px; background:var(--border);
+  /* 피드 */
+  .feed { max-width: 560px; margin: 0 auto; padding: 16px 12px 40px; display: flex; flex-direction: column; gap: 14px; }
+
+  /* 섹션 제목 */
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--text-muted); padding: 4px 0 2px;
+    border-bottom: 1px solid var(--border); margin-bottom: -4px;
   }
 
-  /* ── Market Insights 섹션 제목 ── */
-  .market-section-title {
-    margin:24px 16px 10px;
-    background:linear-gradient(135deg,#0f2744 0%,#1a3f6f 100%);
-    border-radius:12px;
-    padding:14px 18px;
-    display:flex; align-items:center; gap:10px;
-    color:#fff;
-  }
-  .market-section-title .msec-icon { font-size:22px; }
-  .market-section-title .msec-text { }
-  .market-section-title .msec-label { font-size:10px; opacity:.65; letter-spacing:.1em; font-weight:600; }
-  .market-section-title .msec-main  { font-size:16px; font-weight:800; }
-  .market-section-title .msec-date  { font-size:11px; opacity:.6; margin-left:auto; }
-
-  /* ── 피드 ── */
-  .feed { max-width:560px; margin:0 auto; padding:12px 12px 32px; }
-
-  /* ── 카드 ── */
-  .card {
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:var(--radius); margin-bottom:14px;
-    overflow:hidden; position:relative;
-  }
-  .card-header {
-    padding:12px 14px 10px 18px; position:relative;
-    border-bottom:1px solid color-mix(in srgb,var(--cc) 12%,transparent);
-  }
-  .card-header::before {
-    content:''; position:absolute; top:0; left:0;
-    width:4px; height:100%; background:var(--cc);
-  }
-  .card-meta { display:flex; align-items:center; gap:6px; margin-bottom:4px; flex-wrap:wrap; }
-  .card-tag {
-    font-size:11px; font-weight:700; padding:2px 8px; border-radius:20px;
-    color:var(--cc);
-    background:color-mix(in srgb,var(--cc) 10%,transparent);
-    border:1px solid color-mix(in srgb,var(--cc) 30%,transparent);
-  }
-  .card-num { font-size:11px; color:var(--text-muted); font-weight:600; }
-  .card-source { font-size:11px; color:var(--text-muted); margin-left:auto; }
-  .card-title { font-size:15px; font-weight:700; color:var(--text-primary); line-height:1.4; }
-
-  /* ── 시각 컴포넌트 ── */
-  .card-vis { padding:10px 14px 0; }
+  /* 카드 */
+  .card { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  .card-header { position: relative; padding: 13px 14px 10px 18px; border-bottom: 1px solid color-mix(in srgb, var(--cc) 12%, transparent); }
+  .card-header::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--cc); }
+  .card-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; flex-wrap: wrap; }
+  .card-tag { font-size: 10px; font-weight: 700; letter-spacing: .04em; padding: 2px 7px; border-radius: 10px; color: var(--cc); background: color-mix(in srgb, var(--cc) 10%, transparent); border: 1px solid color-mix(in srgb, var(--cc) 25%, transparent); }
+  .card-num { font-size: 10px; color: var(--text-muted); font-weight: 600; }
+  .card-src { font-size: 10px; color: var(--text-muted); margin-left: auto; background: #f4f5f8; padding: 1px 6px; border-radius: 6px; }
+  .card-title { font-size: 15px; font-weight: 700; color: var(--text-primary); line-height: 1.45; }
+  .card-body { padding: 12px 14px; font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+  .card-body + .card-body { padding-top: 0; }
+  .know-more { padding: 10px 14px; background: color-mix(in srgb, var(--cc) 5%, transparent); border-top: 1px solid color-mix(in srgb, var(--cc) 15%, transparent); font-size: 13px; color: var(--text-secondary); line-height: 1.65; }
+  .know-more::before { content: '💡 '; font-size: 13px; }
 
   /* 통계 박스 */
-  .stat-row { display:flex; gap:8px; flex-wrap:wrap; }
-  .stat-item {
-    flex:1; min-width:80px; border-radius:10px; padding:8px 10px;
-    background:color-mix(in srgb,var(--cc) 6%,transparent);
-    border:1px solid color-mix(in srgb,var(--cc) 20%,transparent);
-  }
-  .stat-val   { display:block; font-size:18px; font-weight:800; color:var(--cc); }
-  .stat-label { display:block; font-size:11px; color:var(--text-muted); margin-top:1px; }
-
-  /* 바 차트 */
-  .bar-list { display:flex; flex-direction:column; gap:5px; }
-  .bar-row  { display:flex; align-items:center; gap:8px; }
-  .bar-name { font-size:12px; min-width:90px; color:var(--text-secondary); font-weight:600; }
-  .bar-track{ flex:1; background:#e9ecf2; border-radius:6px; height:20px; overflow:hidden; }
-  .bar-fill { height:100%; border-radius:6px; display:flex; align-items:center;
-    padding:0 8px; font-size:11px; color:#fff; font-weight:700; }
+  .stat-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 14px; }
+  .stat-item { flex: 1; min-width: 90px; background: color-mix(in srgb, var(--cc) 6%, transparent); border: 1px solid color-mix(in srgb, var(--cc) 18%, transparent); border-radius: 10px; padding: 10px 10px 8px; text-align: center; }
+  .stat-val { display: block; font-size: 20px; font-weight: 800; color: var(--cc); line-height: 1.2; }
+  .stat-label { display: block; font-size: 11px; color: var(--text-muted); margin-top: 3px; }
 
   /* 비교표 */
-  .compare-table { border-radius:10px; overflow:hidden; border:1px solid var(--border); }
-  .cmp-head { display:grid; grid-template-columns:1fr 1fr; }
-  .cmp-head-cell { padding:7px 10px; font-size:12px; font-weight:700; text-align:center; }
-  .cmp-ok  { background:#e8f5e9; color:#1e7e6e; }
-  .cmp-bad { background:#fdecea; color:#c0392b; }
-  .cmp-row { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--border); }
-  .cmp-cell { padding:6px 10px; font-size:12px; line-height:1.4; }
-  .cmp-cell.ok  { border-right:1px solid var(--border); }
+  .compare-table { margin: 10px 14px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); font-size: 13px; }
+  .cmp-head { display: flex; }
+  .cmp-head-cell { flex: 1; padding: 7px 10px; font-weight: 700; font-size: 12px; text-align: center; }
+  .cmp-ok { background: color-mix(in srgb, #1e7e6e 15%, transparent); color: #1e7e6e; }
+  .cmp-bad { background: color-mix(in srgb, #c0392b 15%, transparent); color: #c0392b; }
+  .cmp-row { display: flex; border-top: 1px solid var(--border); }
+  .cmp-cell { flex: 1; padding: 7px 10px; font-size: 13px; line-height: 1.5; }
+  .cmp-cell.ok { background: color-mix(in srgb, #1e7e6e 4%, transparent); }
+  .cmp-cell.bad { background: color-mix(in srgb, #c0392b 4%, transparent); border-left: 1px solid var(--border); }
 
-  /* 인용구 */
-  .quote-box {
-    border-left:3px solid var(--cc); border-radius:6px;
-    background:color-mix(in srgb,var(--cc) 5%,transparent);
-    padding:8px 12px;
-  }
-  .quote-text { font-size:13px; font-style:italic; color:var(--text-secondary); line-height:1.5; }
-  .quote-src  { font-size:11px; color:var(--text-muted); margin-top:4px; font-weight:600; }
+  /* 맞춤법 박스 */
+  .spell-box { margin: 10px 14px; display: flex; gap: 8px; }
+  .spell-item { flex: 1; border-radius: 10px; padding: 10px 12px; text-align: center; }
+  .spell-wrong { background: #fdecea; border: 1px solid #f5b0ab; color: #c0392b; }
+  .spell-right { background: #e6f5f2; border: 1px solid #8ecfc6; color: #1e7e6e; }
+  .spell-label { font-size: 10px; font-weight: 700; letter-spacing: .05em; margin-bottom: 4px; opacity: .7; }
+  .spell-word { font-size: 18px; font-weight: 800; }
+  .spell-note { font-size: 11px; margin-top: 3px; opacity: .75; }
 
-  /* 날씨 배너 */
-  .weather-banner {
-    background:linear-gradient(135deg,#1a6f8a,#2c5f8a);
-    border-radius:10px; padding:12px 14px;
-    color:#fff; display:flex; align-items:center; gap:12px;
-  }
-  .weather-icon { font-size:36px; }
-  .weather-temp { font-size:28px; font-weight:800; }
-  .weather-desc { font-size:12px; opacity:.85; margin-top:2px; }
+  /* 바 차트 */
+  .bar-list { margin: 10px 14px; display: flex; flex-direction: column; gap: 6px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; }
+  .bar-name { width: 80px; font-size: 12px; font-weight: 600; color: var(--text-secondary); flex-shrink: 0; }
+  .bar-track { flex: 1; background: color-mix(in srgb, var(--cc) 8%, transparent); border-radius: 6px; overflow: hidden; height: 26px; }
+  .bar-fill { height: 100%; background: var(--cc); border-radius: 6px; display: flex; align-items: center; padding: 0 8px; min-width: 50px; }
+  .bar-val { font-size: 11px; font-weight: 700; color: #fff; }
 
-  /* ── 본문 ── */
-  .card-body { padding:10px 14px 12px 18px; font-size:14px;
-    color:var(--text-secondary); line-height:1.7; }
+  /* 인용구 박스 */
+  .quote-box { margin: 10px 14px; padding: 12px 14px; border-left: 3px solid var(--cc); background: color-mix(in srgb, var(--cc) 5%, transparent); border-radius: 0 10px 10px 0; }
+  .quote-text { font-size: 14px; font-style: italic; color: var(--text-secondary); line-height: 1.6; }
+  .quote-src { font-size: 11px; color: var(--text-muted); margin-top: 6px; font-weight: 600; }
 
-  /* ── 시사점 ── */
-  .know-more {
-    padding:10px 14px 12px 18px; font-size:13px;
-    color:var(--text-secondary); line-height:1.6;
-    background:color-mix(in srgb,var(--cc) 5%,transparent);
-    border-top:1px solid color-mix(in srgb,var(--cc) 18%,transparent);
-  }
-  .know-more-label { font-size:11px; font-weight:700; color:var(--cc);
-    margin-bottom:3px; display:block; }
+  /* 타임라인 */
+  .timeline { margin: 10px 14px; }
+  .tl-item { display: flex; gap: 10px; padding-bottom: 12px; position: relative; }
+  .tl-item:not(:last-child)::before { content: ''; position: absolute; left: 9px; top: 20px; bottom: 0; width: 2px; background: color-mix(in srgb, var(--cc) 25%, transparent); }
+  .tl-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--cc); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #fff; font-weight: 700; margin-top: 1px; }
+  .tl-content .tl-year { font-size: 11px; font-weight: 700; color: var(--cc); }
+  .tl-content .tl-desc { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
 
-  /* ── Market 전용 카드 스타일 ── */
-  .card.market {
-    border-color:#c8d8ee;
-    background:linear-gradient(180deg,#fff 0%,#f7faff 100%);
-  }
-  .card.market .card-header {
-    background:color-mix(in srgb,var(--cc) 4%,#f4f8ff);
-  }
-  .market-impact {
-    padding:8px 14px 10px 18px; font-size:13px;
-    color:#1a3f6f; line-height:1.6;
-    background:linear-gradient(90deg,color-mix(in srgb,var(--cc) 8%,#eef4ff),#f4f8ff);
-    border-top:1px dashed #b8ccdf;
-  }
-  .market-impact-label { font-size:10px; font-weight:800; letter-spacing:.07em;
-    color:var(--cc); display:block; margin-bottom:2px; }
-  .analyst-box {
-    margin:0 0 14px; padding:16px 18px;
-    background:linear-gradient(135deg,#0f2744,#1a3f6f);
-    border-radius:14px; color:#fff;
-  }
-  .analyst-label { font-size:10px; letter-spacing:.1em; opacity:.6; font-weight:700; margin-bottom:6px; }
-  .analyst-quote { font-size:14px; line-height:1.7; font-weight:500; opacity:.92; }
-  .analyst-quote b { color:#7ec8e3; }
+  /* 시장 섹션 배지 */
+  .market-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-bottom: 5px; background: color-mix(in srgb, var(--cc) 12%, transparent); color: var(--cc); border: 1px solid color-mix(in srgb, var(--cc) 25%, transparent); }
 
-  /* ── 푸터 ── */
-  .page-footer { text-align:center; font-size:12px; color:var(--text-muted);
-    padding:20px 16px; border-top:1px solid var(--border); margin-top:8px; }
+  /* 푸터 */
+  .site-footer { max-width: 560px; margin: 0 auto; padding: 0 12px 32px; text-align: center; font-size: 12px; color: var(--text-muted); line-height: 1.7; }
 
-  /* ── 반응형 ── */
-  @media(min-width:600px) {
-    .stat-item { min-width:100px; }
-    .card-title { font-size:16px; }
+  @media (min-width: 600px) {
+    .feed { padding: 20px 16px 60px; }
+    .card-title { font-size: 16px; }
+    .card-body { font-size: 15px; }
+    .site-header { padding: 14px 24px; }
   }
 </style>
 </head>
@@ -216,490 +167,411 @@
 <header class="site-header">
   <div class="header-left">
     <div class="eyebrow">▎ 아침 뉴스 브리핑</div>
-    <div class="title">오늘의 신문 읽기</div>
+    <div class="site-title">오늘의 신문 읽기</div>
   </div>
   <div class="header-right">
-    2026.04.21<br>유신@JKY
+    <div class="hdate">2026.04.22 · 수요일</div>
+    <div class="hauth">유신@JKY</div>
   </div>
 </header>
 
 <!-- ── 칩 바 ── -->
 <nav class="chip-bar">
-  <a class="chip" href="#n1">🌤️ 날씨</a>
-  <a class="chip" href="#n2">🔴 안보</a>
-  <a class="chip" href="#n3">🟡 명품</a>
-  <a class="chip" href="#n4">🟠 금융</a>
-  <a class="chip" href="#n5">🔷 과학</a>
-  <a class="chip" href="#n6">🟠 재정</a>
-  <a class="chip" href="#n7">🩷 문화</a>
-  <a class="chip" href="#n8">🔵 정치</a>
-  <a class="chip" href="#n9">🟣 AI</a>
-  <a class="chip" href="#n10">🩷 콘텐츠</a>
-  <span style="width:1px;background:#dde2ec;margin:0 4px;"></span>
-  <a class="chip" href="#m1" style="background:#0f2744;color:#7ec8e3;border-color:#1a3f6f;">📊 지정학</a>
-  <a class="chip" href="#m2" style="background:#0f2744;color:#7ec8e3;border-color:#1a3f6f;">📊 반도체</a>
-  <a class="chip" href="#m3" style="background:#0f2744;color:#7ec8e3;border-color:#1a3f6f;">📊 거시</a>
-  <a class="chip" href="#m4" style="background:#0f2744;color:#7ec8e3;border-color:#1a3f6f;">📊 산업</a>
-  <a class="chip" href="#m5" style="background:#0f2744;color:#7ec8e3;border-color:#1a3f6f;">📊 기업</a>
+  <a class="chip ch-red"    href="#n1">🔴 정치</a>
+  <a class="chip ch-green"  href="#n2">🟢 건강</a>
+  <a class="chip ch-gold"   href="#n3">🟡 증시</a>
+  <a class="chip ch-rose"   href="#n4">🩷 스포츠</a>
+  <a class="chip ch-purple" href="#n5">🟣 의료기술</a>
+  <a class="chip ch-blue"   href="#n6">🔵 국제</a>
+  <a class="chip ch-rose"   href="#n7">🩷 관광</a>
+  <a class="chip ch-slate"  href="#n8">⬛ 사회</a>
+  <a class="chip ch-gold"   href="#n9">🟡 기업</a>
+  <a class="chip ch-sky"    href="#n10">💬 우리말</a>
+  <a class="chip ch-orange" href="#m1">📊 마켓</a>
 </nav>
 
-<div class="feed">
+<!-- ── 피드 ── -->
+<main class="feed">
 
-  <!-- ══════════════════════════════
-       📰 일반 뉴스 섹션
-  ══════════════════════════════ -->
-  <div class="section-title">📰 오늘의 신문</div>
-
-  <!-- N1 날씨 -->
-  <article class="card c-teal" id="n1">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">날씨</span>
-        <span class="card-num">#1</span>
-      </div>
-      <div class="card-title">다시 겨울옷 꺼내야 하나… 서울 아침 6도</div>
+<!-- ① 아부 정치 -->
+<article class="card c-red" id="n1">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">정치·사회</span>
+      <span class="card-num">#01</span>
+      <span class="card-src">경향</span>
     </div>
-    <div class="card-vis">
-      <div class="weather-banner">
-        <div class="weather-icon">🥶</div>
-        <div>
-          <div class="weather-temp">6°C</div>
-          <div class="weather-desc">서울 아침 기온 · 전날比 5~10도 급강하 · 강풍 체감↓</div>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      4월 하순임에도 전국 대부분 지역에서 아침 기온이 <b>전날 대비 5~10도 급락</b>하며 체감상 초봄 수준으로 되돌아갔다. 강한 바람까지 더해져 실제 기온보다 체감온도는 더욱 낮을 전망이다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      4월 중하순의 기온 급강하는 시베리아 고기압이 일시 남하할 때 발생하는 전형적인 패턴. 일교차가 15도 이상 벌어지는 날이 며칠간 지속될 수 있으니 외출 시 겉옷 준비가 필요하다.
-    </div>
-  </article>
-
-  <!-- N2 북한 집속탄 -->
-  <article class="card c-red" id="n2">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">안보</span>
-        <span class="card-num">#2</span>
-        <span class="card-source">헤럴드경제 외</span>
-      </div>
-      <div class="card-title">北 '악마의 무기' 집속탄 발사 실험</div>
-    </div>
-    <div class="card-vis">
-      <div class="quote-box">
-        <div class="quote-text">하나의 탄두에 수백 개의 자탄이 들어 있어 광범위하고도 무차별적인 살상성 때문에 '악마의 무기', '강철비'라 불린다.</div>
-        <div class="quote-src">— 집속탄 특성 설명</div>
-      </div>
-    </div>
-    <div class="card-body">
-      북한이 19일 동해로 발사한 발사체가 <b>집속탄(확산탄)</b>으로 확인됐다. 집속탄은 단일 탄두 내에 수백 개의 소형 자탄이 탑재돼 넓은 면적을 무차별 타격하는 무기로, 국제 협약(오슬로 협약)으로 사용이 금지되어 있다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      111개국이 가입한 오슬로 협약은 집속탄의 생산·사용·이전을 전면 금지하지만, 북한·미국·러시아·중국·이스라엘 등 주요 군사 강국은 미가입 상태다. 북한의 이번 발사는 대남·대미 억제력을 다변화하는 신호탄으로 해석된다.
-    </div>
-  </article>
-
-  <!-- N3 에르메스 -->
-  <article class="card c-gold" id="n3">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">기업·소비</span>
-        <span class="card-num">#3</span>
-        <span class="card-source">아시아경제</span>
-      </div>
-      <div class="card-title">알면서도 자꾸 사니까… 에르메스, 한국 매출 1조 돌파</div>
-    </div>
-    <div class="card-vis">
-      <div class="bar-list">
-        <div class="bar-row">
-          <div class="bar-name">에르메스 순이익</div>
-          <div class="bar-track"><div class="bar-fill" style="width:100%;background:#a07840;">2,404억원 중 2,350억 본사 배당 (98%)</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">루이비통 순이익</div>
-          <div class="bar-track"><div class="bar-fill" style="width:90%;background:#b06030;">3,890억 중 2,822억 배당 (73%)</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">샤넬코리아</div>
-          <div class="bar-track"><div class="bar-fill" style="width:70%;background:#c07040;">1,950억 배당</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      에르메스코리아가 국내 매출 <b>1조 원을 돌파</b>하며 기록을 썼다. 당기순이익 2,404억 원의 <b>98%인 2,350억 원을 100% 주주인 프랑스 본사</b>에 배당했다. 루이비통·샤넬 등 주요 명품 브랜드도 수천억 원대를 본국으로 송금하는 구조다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      해외 명품 브랜드의 고배당 본사 송금은 합법적 구조다. 그러나 고용 창출·세수 기여가 매출 규모에 비해 미미하다는 비판이 꾸준히 제기된다. 소비자 욕구와 부의 해외 유출 사이의 딜레마가 여전히 숙제로 남는다.
-    </div>
-  </article>
-
-  <!-- N4 보험사 부동산 -->
-  <article class="card c-orange" id="n4">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">금융·부동산</span>
-        <span class="card-num">#4</span>
-        <span class="card-source">헤럴드경제</span>
-      </div>
-      <div class="card-title">보험사 보유 부동산도 투기용?</div>
-    </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item">
-          <span class="stat-val">9조</span>
-          <span class="stat-label">보험사 투자부동산 장부가</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-val">20조</span>
-          <span class="stat-label">추정 시가</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-val">2배↑</span>
-          <span class="stat-label">장부 대비 시가 괴리</span>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      국내 보험사들이 보유한 업무용 外 부동산의 장부가는 약 <b>9조 원</b>이지만 시가로는 <b>약 20조 원</b>에 달하는 것으로 추정된다. 현행법상 '업무용 부동산'으로 분류해 투자자산 한도 규제를 우회하는 구조다. 최근 대통령의 기업 부동산 보유 지적 발언 이후 규제 강화 여론이 형성되고 있다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      보험사는 보험료를 굴리는 기관투자자로 부동산 투자 자체는 합법이다. 다만 장부가와 시가의 약 2배 괴리는 자산 실질가치가 재무제표에 충분히 반영되지 않는다는 의미이기도 하다. 제도 개편 논의가 가시화되면 보험업종 주가와 부동산 수급에 영향이 있을 수 있다.
-    </div>
-  </article>
-
-  <!-- N5 폴더블폰 주름 -->
-  <article class="card c-sky" id="n5">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">과학·기술</span>
-        <span class="card-num">#5</span>
-        <span class="card-source">헤럴드경제</span>
-      </div>
-      <div class="card-title">주름 없는 폴더블폰 나올까? — KAIST, 세계 특허 출원</div>
-    </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item">
-          <span class="stat-val">&lt;1mm</span>
-          <span class="stat-label">인지 불가 주름 깊이 목표</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-val">수만 회</span>
-          <span class="stat-label">반복 접힘에도 변형 최소화</span>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      KAIST 이필승 교수팀이 폴더블 디스플레이의 고질적 문제인 <b>접힘 주름</b>을 혁신적으로 줄이는 재설계 기술을 개발해 세계 특허를 출원했다. 1mm 미만의 주름 깊이를 인지하지 못할 수준으로 낮추고, 수만 회 반복 접힘에도 형태 변형을 최소화하는 것이 핵심이다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      폴더블폰 시장에서 '힌지 주름'은 삼성·화웨이·샤오미가 모두 해결하지 못한 공통 난제였다. 특허 출원 단계이므로 상용화까지는 시간이 필요하지만, 국내 기술이 글로벌 스탠더드를 선점할 가능성이 생겼다는 점에서 의미 있는 진전이다.
-    </div>
-  </article>
-
-  <!-- N6 GDP 부채율 -->
-  <article class="card c-orange" id="n6">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">재정·경제</span>
-        <span class="card-num">#6</span>
-        <span class="card-source">국민일보</span>
-      </div>
-      <div class="card-title">한국 GDP 대비 국가부채율 54.4%… 아직 괜찮다고?</div>
-    </div>
-    <div class="card-vis">
-      <div class="bar-list">
-        <div class="bar-row">
-          <div class="bar-name">🇯🇵 일본</div>
-          <div class="bar-track"><div class="bar-fill" style="width:100%;background:#c0392b;">230%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇺🇸 미국</div>
-          <div class="bar-track"><div class="bar-fill" style="width:54%;background:#e07030;">124%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇫🇷 프랑스</div>
-          <div class="bar-track"><div class="bar-fill" style="width:51%;background:#e08030;">117%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇩🇪 독일</div>
-          <div class="bar-track"><div class="bar-fill" style="width:27%;background:#b05a00;">62%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇰🇷 한국</div>
-          <div class="bar-track"><div class="bar-fill" style="width:24%;background:#1a6fd4;">54.4%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">비기축통화 평균</div>
-          <div class="bar-track"><div class="bar-fill" style="width:24%;background:#4a5568;opacity:.8;">55%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇹🇼 대만</div>
-          <div class="bar-track"><div class="bar-fill" style="width:12%;background:#1e7e6e;">27.6%</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">🇩🇰 덴마크</div>
-          <div class="bar-track"><div class="bar-fill" style="width:12%;background:#1e7e6e;">27.4%</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      한국의 GDP 대비 국가부채율(54.4%)은 일본(230%), 미국(124%)보다 낮아 '아직 안전하다'는 주장이 있다. 그러나 비교 대상을 바꾸면 결론이 달라진다. <b>비기축통화국 중 선진국 11개국 평균(55%)을 이미 넘어섰고</b>, 재정 우등생으로 꼽히는 대만(27.6%)·덴마크(27.4%)의 두 배 수준이다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      기축통화국(미국·일본 등)은 자국 통화로 채권을 발행할 수 있어 높은 부채비율을 견딜 여력이 상대적으로 크다. 원화를 사용하는 한국은 이들과 단순 비교보다 <b>같은 비기축통화 선진국군</b>과 비교하는 것이 더 정확한 맥락이다.
-    </div>
-  </article>
-
-  <!-- N7 노벨문학상 못 받은 작가들 -->
-  <article class="card c-rose" id="n7">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">문화</span>
-        <span class="card-num">#7</span>
-      </div>
-      <div class="card-title">이들의 공통점은? — 노벨상 살아있어도 못 받은 거장들</div>
-    </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">7명</span><span class="stat-label">수상 못한 거장</span></div>
-        <div class="stat-item"><span class="stat-val">규정</span><span class="stat-label">생존 작가에만 수여</span></div>
-      </div>
-    </div>
-    <div class="card-body">
-      톨스토이·프루스트·루쉰·버지니아 울프·카프카·제임스 조이스·밀란 쿤데라. 이들은 노벨상 제정(1901년) 당시 혹은 수상 가능한 시기에 생존해 있었지만 <b>노벨문학상을 받지 못했다</b>. 노벨 위원회는 생존 작가에게만 상을 수여하는 원칙을 고수한다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      톨스토이는 당대 아카데미와 사상적 갈등이 있었고, 카프카는 생전 무명에 가까웠다. 문학상이 '인류에게 이상을 준 작가'를 선정하지만, 정치·이념·위원회 취향이 반영된다는 비판은 오랫동안 이어져 왔다. 문학의 위대함이 수상 여부와 일치하지 않는다는 증거이기도 하다.
-    </div>
-  </article>
-
-  <!-- N8 무투표 당선 -->
-  <article class="card c-blue" id="n8">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">정치·제도</span>
-        <span class="card-num">#8</span>
-        <span class="card-source">서울신문</span>
-      </div>
-      <div class="card-title">무투표 당선의 문제점 — 유권자가 공약을 모른다</div>
-    </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">490명</span><span class="stat-label">2022년 무투표 당선 (12%)</span></div>
-        <div class="stat-item"><span class="stat-val">89명</span><span class="stat-label">2018년 (비교)</span></div>
-        <div class="stat-item"><span class="stat-val">5.5배↑</span><span class="stat-label">4년 새 증가폭</span></div>
-      </div>
-    </div>
-    <div class="card-body">
-      무투표 당선은 후보자가 단독 출마하면 선거 운동 자체가 중단되는 구조다. 유권자는 후보의 공약을 접하기 어렵고 정책 검증도 이뤄지지 않는다. 2022년 지방선거 무투표 당선자 <b>490명(전체 12%)</b>은 2018년 89명 대비 약 5.5배 급증했다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      무투표 당선 급증은 특정 정당의 기초 지역 독점화 경향과 맞닿아 있다. 경쟁이 없는 선거는 민주주의의 핵심 기능인 '선택'을 박탈한다. 후보 단수 출마 시에도 찬반 투표를 실시하거나 재정지원 요건을 강화하는 등의 제도 개선이 논의된다.
-    </div>
-  </article>
-
-  <!-- N9 생성형 AI 정보 출처 -->
-  <article class="card c-purple" id="n9">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">AI·기술</span>
-        <span class="card-num">#9</span>
-        <span class="card-source">문화일보</span>
-      </div>
-      <div class="card-title">생성형 AI, 어디서 정보 가져오나</div>
-    </div>
-    <div class="card-vis">
-      <div class="bar-list">
-        <div class="bar-row">
-          <div class="bar-name">1위 유튜브</div>
-          <div class="bar-track"><div class="bar-fill" style="width:100%;background:#6d3fad;">전 분야 1위</div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">2위 위키피디아</div>
-          <div class="bar-track"><div class="bar-fill" style="width:82%;background:#8a52c5;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">3위 구글</div>
-          <div class="bar-track"><div class="bar-fill" style="width:65%;background:#a06fda;"></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">헬스케어 1위</div>
-          <div class="bar-track"><div class="bar-fill" style="width:55%;background:#1e7e6e;">NCBI(미 국립생물정보센터)</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="card-body">
-      AI 연구에 따르면 생성형 AI가 학습·인용하는 정보 출처 1위는 <b>유튜브</b>, 2위 위키피디아, 3위 구글 순이었다. 분야별로는 차이가 있어, 헬스케어는 <b>미 국립생물정보센터(NCBI)</b>가 1위를 차지했고, 금융·전자상거래·스포츠 분야는 시각 자료가 풍부한 유튜브를 주로 활용했다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      AI가 유튜브를 최다 인용한다는 것은 곧 영상 속 구어체 정보·의견이 AI 학습에 대거 포함된다는 의미다. 신뢰도가 검증되지 않은 유튜브 콘텐츠가 AI 답변에 반영될 수 있으므로, AI 응답의 출처를 비판적으로 확인하는 습관이 중요하다.
-    </div>
-  </article>
-
-  <!-- N10 K드라마 냉각 -->
-  <article class="card c-rose" id="n10">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">콘텐츠·산업</span>
-        <span class="card-num">#10</span>
-      </div>
-      <div class="card-title">K드라마 시장, 냉각 국면에 들었나</div>
-    </div>
-    <div class="card-vis">
-      <div class="quote-box">
-        <div class="quote-text">"앞으로 제작 편수는 더 줄어들 가능성이 크다. 글로벌 OTT는 점차 다른 나라로 눈을 돌릴 것이다."</div>
-        <div class="quote-src">— 드라마PD협회 대외협력위원장</div>
-      </div>
-    </div>
-    <div class="card-body">
-      넷플릭스가 이끌었던 K드라마 붐이 <b>"거의 제자리로 돌아왔다"</b>는 현장 진단이 나왔다. 전문가들은 글로벌 OTT가 한국 드라마 투자를 충분히 소화한 이후 인도·동남아 등 다른 시장으로 눈을 돌리고 있으며, 연간 제작 편수 감소가 불가피하다고 분석한다.
-    </div>
-    <div class="know-more">
-      <span class="know-more-label">💡 알아두면 좋은 것</span>
-      K콘텐츠 붐은 구조적 성장이 아닌 OTT의 '대규모 투자 확장기'에 맞물린 호황이었다는 해석이 설득력을 얻고 있다. 제작사 입장에서는 편당 단가와 수주 물량 모두 줄어드는 이중 압박이 시작됐다. 장기적으로는 콘텐츠 IP 보유와 자체 유통 채널 확보가 생존 조건이 될 것이다.
-    </div>
-  </article>
-
-
-  <!-- ══════════════════════════════
-       📊 DAILY MARKET INSIGHTS 섹션
-  ══════════════════════════════ -->
-  <div class="market-section-title">
-    <div class="msec-icon">📊</div>
-    <div class="msec-text">
-      <div class="msec-label">DAILY MARKET INSIGHTS</div>
-      <div class="msec-main">시장 동향 브리핑</div>
-    </div>
-    <div class="msec-date">2026.04.21</div>
+    <div class="card-title">'아부만이 살 길'… 100년 전 멩켄의 말이 지금도 통하는 이유</div>
   </div>
+  <div class="card-body">
+    미국 언론인 <b>헨리 루이 멩켄(H.L. Mencken)</b>은 1920년대 미국 정치를 이렇게 꼬집었다. <i>"공직자가 성공하는 유일한 길은 대중에게 아부하고 빌붙는 것이다. 후보자는 대중의 광기를 통째로 수용해야만 한다."</i> 멩켄은 당시 선동 정치와 포퓰리즘의 위험성을 날카롭게 경고했으며, 그 통찰은 100년이 지난 현재까지도 유효하다는 평가를 받는다.
+  </div>
+  <div class="know-more">민주주의에서 대중의 지지를 얻는 것은 불가피하지만, '대중에게 맞추는 것'과 '대중을 이끄는 것'은 다르다. 멩켄의 경고는 포퓰리즘이 재부상하는 오늘날 정치 지형에서 다시 한번 곱씹을 만하다.</div>
+</article>
 
-  <!-- M1 호르무즈 -->
-  <article class="card market c-orange" id="m1">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">지정학</span>
-        <span class="card-num">Market #1</span>
-      </div>
-      <div class="card-title">호르무즈 뚫은 첫 한국행 유조선… 원유 100만 배럴 확보</div>
+<!-- ② 헤딩 뇌손상 -->
+<article class="card c-green" id="n2">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">건강·스포츠</span>
+      <span class="card-num">#02</span>
+      <span class="card-src">경향</span>
     </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">100만</span><span class="stat-label">배럴 확보</span></div>
-        <div class="stat-item"><span class="stat-val">Peak-out</span><span class="stat-label">유가 리스크 전환 기대</span></div>
-      </div>
+    <div class="card-title">축구 '헤딩'은 뇌에 위험하다… 영국은 이미 규제 시작</div>
+  </div>
+  <div class="card-body">
+    <b>2019년 영국 연구</b>에 따르면 축구선수는 일반인보다 신경퇴행성 질환(치매·파킨슨·ALS 등) 발병 위험이 <b>약 3.5배</b> 높다. 반복적인 헤딩이 뇌에 미세충격을 가해 만성외상성뇌병증(CTE)으로 이어질 수 있다는 것이 핵심 우려다.
+  </div>
+  <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val">3.5×</span>
+      <span class="stat-label">신경퇴행 위험 증가</span>
     </div>
-    <div class="card-body">
-      긴장이 고조됐던 <b>호르무즈 해협</b>을 통과한 첫 한국행 유조선이 원유 100만 배럴을 싣고 항해 중이다. 트럼프 대통령도 이란을 향해 협상 여지를 남기는 발언을 내놓으며 분위기가 달라졌다.
+    <div class="stat-item">
+      <span class="stat-val">U-11</span>
+      <span class="stat-label">英 헤딩 금지 연령</span>
     </div>
-    <div class="market-impact">
-      <span class="market-impact-label">📈 시장 영향 / 시사점</span>
-      유가와 지정학 리스크의 '피크 아웃' 기대감이 형성되며 에너지 수급 불안 해소 → 증시 투자심리 회복과 낙폭 과대주 반등 트리거로 작용할 전망. 리스크가 '상수'에서 '변수'로 전환되는 구간으로, 유가 안정은 금리 민감주·내수 소비재 섹터에도 숨통을 틔울 수 있다.
-    </div>
-  </article>
-
-  <!-- M2 소캠2 -->
-  <article class="card market c-purple" id="m2">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">반도체</span>
-        <span class="card-num">Market #2</span>
-      </div>
-      <div class="card-title">"HBM 다음은 저전력 싸움"… 소캠2(LPCAMM2) 양산 경쟁 본격화</div>
-    </div>
-    <div class="card-body">
-      <b>HBM(고대역폭메모리)</b>에 이어 차세대 AI 메모리로 꼽히는 <b>LPCAMM2(소캠2)</b>를 둘러싼 삼성전자·SK하이닉스의 양산 경쟁이 심화되고 있다. 온디바이스 AI 시장 확대에 따른 선제적 대응이다.
-    </div>
-    <div class="market-impact">
-      <span class="market-impact-label">📈 시장 영향 / 시사점</span>
-      AI 반도체 모멘텀이 서버에서 디바이스로 확장되는 신호. 반도체가 단순 사이클 산업을 넘어 '구조적 성장 산업'으로 재정립되는 국면으로, HBM 이후 차세대 기술 경쟁력 보유 기업 위주로 포트폴리오 압축 검토가 필요하다.
-    </div>
-  </article>
-
-  <!-- M3 WGBI -->
-  <article class="card market c-blue" id="m3">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">거시·채권</span>
-        <span class="card-num">Market #3</span>
-      </div>
-      <div class="card-title">WGBI 편입 효과… 일본 자금 한국 국채 27조 원 매수</div>
-    </div>
-    <div class="card-vis">
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">21~27조</span><span class="stat-label">일본 기관 매수 추정</span></div>
-        <div class="stat-item"><span class="stat-val">환율↓</span><span class="stat-label">원/달러 안정 기여</span></div>
-      </div>
-    </div>
-    <div class="card-body">
-      세계국채지수(<b>WGBI</b>) 편입 효과로 일본 대형 기관투자자들이 한국 국채를 약 <b>21~27조 원 규모</b>로 대거 매수했다. 대규모 외화 유입이 원/달러 환율 안정에 결정적으로 기여하고 있다.
-    </div>
-    <div class="market-impact">
-      <span class="market-impact-label">📈 시장 영향 / 시사점</span>
-      시중 금리 하락 압력 → 기업 금융 비용 감소 → 증시 수급 호재. 글로벌 자본의 한국 시장 신뢰도 상승 국면으로, 환율 안정 시 외국인 주식 매수세 가속화 가능성이 높아 외국인 수급이 집중되는 대형 우량주에 주목할 필요가 있다.
-    </div>
-  </article>
-
-  <!-- M4 삼성-현대차 -->
-  <article class="card market c-gold" id="m4">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">산업·협력</span>
-        <span class="card-num">Market #4</span>
-      </div>
-      <div class="card-title">이재용·정의선 동행… 전자·모빌리티·조선 '삼각 동맹' 강화</div>
-    </div>
-    <div class="card-body">
-      삼성전자와 현대차그룹이 전자·자동차·조선 전방위 분야에서 협력을 강화하기로 했다. 특히 <b>자율주행 및 전장(車電)</b> 분야에서의 시너지 극대화가 핵심이다.
-    </div>
-    <div class="market-impact">
-      <span class="market-impact-label">📈 시장 영향 / 시사점</span>
-      국내 대표 제조 대기업 연합은 글로벌 경쟁력 강화로 이어져 관련 밸류체인 전반의 멀티플 상승 요인. 두 그룹의 협업 접점에 있는 <b>IT 부품·전장 기업들의 수주 잔고 변화</b>를 주시해야 한다.
-    </div>
-  </article>
-
-  <!-- M5 삼성중공업 -->
-  <article class="card market c-slate" id="m5">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">기업·조선</span>
-        <span class="card-num">Market #5</span>
-      </div>
-      <div class="card-title">삼성중공업, 이란 제재 리스크 선제 차단… 계약 해지</div>
-    </div>
-    <div class="card-body">
-      삼성중공업이 이란 선주와의 선박 건조 계약에서 잔금 미지급을 이유로 <b>선제적 계약 해지</b>를 단행하며 지정학적 제재 리스크를 차단했다. 조선업 슈퍼사이클 속에서도 '선별 수주' 원칙을 지킨 사례로 평가받는다.
-    </div>
-    <div class="market-impact">
-      <span class="market-impact-label">📈 시장 영향 / 시사점</span>
-      수주 잔고의 양보다 <b>마진율(이익의 질)</b>이 높은 대형 조선사 위주의 장기 보유 전략이 유효함. 불확실한 발주처 배제와 안정적 수익 확보 능력이 재부각되며 조선업종 신뢰도 상승.
-    </div>
-  </article>
-
-  <!-- 애널리스트 결론 -->
-  <div class="analyst-box">
-    <div class="analyst-label">💡 ANALYST'S CONCLUSION</div>
-    <div class="analyst-quote">
-      <b>"리스크는 관리되고, 성장은 기술로 증명되는 구간입니다."</b><br><br>
-      호르무즈 해협의 부분 개방과 유화적 외교 신호는 시장의 최대 불안 요소를 잠재웠습니다. 동시에 반도체의 기술 진화(LPCAMM2)와 대기업 간 협력(전자-자동차)은 코스피 8,000을 향한 펀더멘털을 다지고 있습니다. 당분간은 지수 전체보다 <b>반도체 주도주·환율 안정 수혜주·자금력 풍부한 지주사</b> 중심의 차별화 장세에 대비하시길 권장합니다.
+    <div class="stat-item">
+      <span class="stat-val">스코틀랜드</span>
+      <span class="stat-label">프로경기 전후 금지</span>
     </div>
   </div>
+  <div class="know-more">영국·스코틀랜드 등 유럽 축구 선진국은 이미 연령별·시기별 헤딩 제한 규정을 도입했다. 한국 유소년 축구계도 관련 논의가 필요한 시점이다.</div>
+</article>
 
-</div><!-- /feed -->
+<!-- ③ 코스피 -->
+<article class="card c-gold" id="n3">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">증시·경제</span>
+      <span class="card-num">#03</span>
+      <span class="card-src">한경</span>
+    </div>
+    <div class="card-title">코스피 6,388.47 사상 최고가… JP모간 "8,500 간다"</div>
+  </div>
+  <div class="card-body">
+    코스피가 중동 지정학 리스크를 이겨내고 <b>6,388.47포인트</b>로 사상 최고가를 경신했다. 올 들어 누적 상승률은 <b>52%</b>로 주요국 증시 중 1위다. 그럼에도 주가수익비율(PER)은 <b>8.43배</b>에 불과해 여전히 저평가 구간이라는 분석이 지배적이다. JP모간은 코스피 목표를 8,500선으로 제시했다.
+  </div>
+  <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val">6,388</span>
+      <span class="stat-label">코스피 최고가(pt)</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">+52%</span>
+      <span class="stat-label">연초 대비 상승률</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">PER 8.4×</span>
+      <span class="stat-label">여전히 저평가</span>
+    </div>
+  </div>
+  <div class="know-more">최고가 경신에도 불구하고 PER 8배대는 선진국 대비 현저히 낮은 수준이다. '코리아 디스카운트' 해소가 진행 중이라면 추가 상승 여력이 있다는 해석과, 기대치가 과도하게 반영됐을 수 있다는 경계론이 공존한다.</div>
+</article>
 
-<footer class="page-footer">
+<!-- ④ 황희찬 EPL -->
+<article class="card c-rose" id="n4">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">스포츠·문화</span>
+      <span class="card-num">#04</span>
+      <span class="card-src">세계</span>
+    </div>
+    <div class="card-title">황희찬 소속 울버햄프턴 강등… 21년 만에 'EPL 무(無)한국'</div>
+  </div>
+  <div class="card-body">
+    황희찬이 속한 <b>울버햄프턴</b>이 프리미어리그(EPL) 강등이 확정되면서, 2005년 박지성의 맨유 입단 이후 이어진 <b>21년 연속 한국 선수 EPL 활약</b>이 막을 내릴 위기에 처했다. 별도로 EPL 이적 계획이 없다면 다음 시즌 프리미어리그 그라운드에서 태극마크 선수를 찾아보기 어렵게 된다.
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot">05</div>
+      <div class="tl-content">
+        <div class="tl-year">2005년</div>
+        <div class="tl-desc">박지성, 맨체스터 유나이티드 입단 — 한국 선수 EPL 시대 개막</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">→</div>
+      <div class="tl-content">
+        <div class="tl-year">2005~2026</div>
+        <div class="tl-desc">21년간 최소 1명 이상 한국 선수 EPL 무대 활약 유지</div>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot">26</div>
+      <div class="tl-content">
+        <div class="tl-year">2026년</div>
+        <div class="tl-desc">울버햄프턴 강등 확정 → 황희찬 EPL 이탈 가능성, 기록 단절 위기</div>
+      </div>
+    </div>
+  </div>
+  <div class="know-more">단순한 '기록'을 넘어, EPL 내 한국 선수 부재는 K-리그 브랜드·청소년 롤모델·중계 콘텐츠 시장에도 영향을 미친다. 황희찬의 이적 행선지가 주목된다.</div>
+</article>
+
+<!-- ⑤ 세브란스 로봇수술 -->
+<article class="card c-purple" id="n5">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">의료기술</span>
+      <span class="card-num">#05</span>
+      <span class="card-src">서울경제</span>
+    </div>
+    <div class="card-title">세브란스병원, 세계 최초 로봇수술 5만 건 돌파</div>
+  </div>
+  <div class="card-body">
+    연세대 세브란스병원이 <b>2005년 국내 최초</b>로 로봇수술을 도입한 지 <b>21년 만</b>에 단일 의료기관 기준 세계 최초로 로봇수술 <b>5만 건</b>을 달성했다. 다빈치 로봇 시스템을 중심으로 복강경 수술 대비 정밀도와 회복 속도 측면에서 앞선 결과를 축적해 온 성과로 평가받는다.
+  </div>
+  <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val">5만</span>
+      <span class="stat-label">누적 로봇수술 건수</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">21년</span>
+      <span class="stat-label">도입 후 소요 기간</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">세계 최초</span>
+      <span class="stat-label">단일 병원 기준</span>
+    </div>
+  </div>
+  <div class="know-more">로봇수술 5만 건은 수술 데이터 축적 면에서도 의미가 크다. 방대한 임상 데이터를 AI 학습에 활용하면 수술 예측·오류 방지 시스템으로 이어질 수 있는 발판이 된다.</div>
+</article>
+
+<!-- ⑥ 돌고래 부대 -->
+<article class="card c-blue" id="n6">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">국제·군사</span>
+      <span class="card-num">#06</span>
+      <span class="card-src">서울경제</span>
+    </div>
+    <div class="card-title">미 해군의 '돌고래 부대'… 베트남전부터 현재까지</div>
+  </div>
+  <div class="card-body">
+    미 해군은 <b>1960년대</b>부터 돌고래의 군사적 활용을 연구해 왔다. 수중 물체 탐색, 정찰, 기뢰 제거 훈련을 거쳐 <b>베트남전</b>과 <b>이란·이라크 전쟁(1980~)</b>에 실전 투입됐다. 1980년대에는 돌고래 부대 규모가 <b>100마리 이상</b>에 달했으며, 러시아도 구소련의 돌고래 부대를 계승해 <b>흑해 해군기지</b> 순찰에 여전히 활용 중이다.
+  </div>
+  <div class="know-more">돌고래는 소나(음파탐지) 능력이 인공 장비를 능가할 정도로 정밀해 수중 기뢰 탐지에 유리하다. 동물 복지 논란에도 불구하고 미·러 양국이 해양 안보 목적으로 운용을 지속하는 배경이다.</div>
+</article>
+
+<!-- ⑦ BTS 관광 -->
+<article class="card c-rose" id="n7">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">문화·관광</span>
+      <span class="card-num">#07</span>
+      <span class="card-src">매경</span>
+    </div>
+    <div class="card-title">3월 한국 찾은 외국인 211만명… 월간 최초 200만 돌파</div>
+  </div>
+  <div class="card-body">
+    2026년 3월 외국인 입국자가 <b>211만 1,658명</b>을 기록하며 사상 처음으로 한 달 방문객 <b>200만 명</b>을 돌파했다. 전월 대비 <b>+40.4%</b>, 전년 동월 대비 <b>+26.5%</b>의 증가세다. K-팝·드라마 등 한류 콘텐츠, BTS 효과와 함께 엔화 약세로 일본 여행 수요가 한국으로 일부 이동한 점도 요인으로 분석된다.
+  </div>
+  <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val">211만</span>
+      <span class="stat-label">3월 외국인 입국자</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">+40.4%</span>
+      <span class="stat-label">전월 대비</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">+26.5%</span>
+      <span class="stat-label">전년 동월 대비</span>
+    </div>
+  </div>
+  <div class="know-more">관광 산업은 외화 수입과 내수 소비 양쪽에 동시에 기여한다. 월 200만 명 돌파가 구조적 추세인지, 계절적 특수인지는 2분기 수치로 검증이 필요하다.</div>
+</article>
+
+<!-- ⑧ 대한상의 가짜뉴스 -->
+<article class="card c-slate" id="n8">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">사회·언론</span>
+      <span class="card-num">#08</span>
+      <span class="card-src">한경</span>
+    </div>
+    <div class="card-title">대한상의 '가짜뉴스' 지적 후폭풍… 경제단체 보도자료 절반 이하로</div>
+  </div>
+  <div class="card-body">
+    대한상공회의소가 올해 2월 영국 컨설팅사 헨리앤드파트너스 통계를 인용해 <b>"고액 자산가 2,400명이 한국을 떠났다"</b>는 자료를 배포했다가, 대통령으로부터 <b>"출처 불분명 가짜뉴스"</b>로 지적받았다. 이후 상의는 임원 <b>4명을 해임·의원면직</b> 처리했으며, 이 사태 이후 주요 경제단체들의 보도자료 발행 건수가 전년도의 절반 이하로 급감했다.
+  </div>
+  <div class="know-more">경제단체의 자기 검열이 심화되면 정책 입안에 필요한 민간의 목소리가 줄어드는 부작용이 생길 수 있다. 정보의 정확성 확보와 정책 소통 채널 유지, 두 가지를 동시에 달성하는 균형점을 찾는 과제가 남는다.</div>
+</article>
+
+<!-- ⑨ 초코파이 러시아 -->
+<article class="card c-gold" id="n9">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">기업·수출</span>
+      <span class="card-num">#09</span>
+      <span class="card-src">매경</span>
+    </div>
+    <div class="card-title">오리온 초코파이, 러시아서만 2,168억 원… 글로벌 매출의 32%</div>
+  </div>
+  <div class="card-body">
+    오리온의 <b>초코파이</b>는 글로벌 매출 <b>6,740억 원</b> 중 <b>32%인 2,168억 원</b>을 러시아에서 달성했다. 현지 생산·유통망을 일찌감치 구축해 단일 제품·단일 국가 조합으로 2,000억 원을 돌파한 사례다. 서방의 대러 제재로 글로벌 브랜드들이 러시아 시장을 철수하는 사이, 오리온은 오히려 경쟁 공백을 파고든 셈이다.
+  </div>
+  <div class="bar-list">
+    <div class="bar-row">
+      <div class="bar-name">🇷🇺 러시아</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:100%;">
+          <span class="bar-val">2,168억 (32%)</span>
+        </div>
+      </div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-name">🌍 기타 해외</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:68%;">
+          <span class="bar-val">4,572억 (68%)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="know-more">러시아 의존도 32%는 지정학 리스크가 현실화될 경우 취약 요인이 될 수 있다. 그러나 현재까지는 서방 경쟁자 부재가 오리온의 현지 점유율을 오히려 높이는 역설적 기회가 되고 있다.</div>
+</article>
+
+<!-- ⑩ 맞춤법 -->
+<article class="card c-sky" id="n10">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">우리말</span>
+      <span class="card-num">#10</span>
+    </div>
+    <div class="card-title">냉면 국물이 '슴슴하다'? '심심하다'?… 표준어는?</div>
+  </div>
+  <div class="card-body">
+    <b>'음식 맛이 조금 싱겁다'</b>는 뜻을 가진 표준어는 <b>'심심하다'</b>이며, 비슷한 말로 <b>'삼삼하다'</b>가 있다. '슴슴하다'는 표준국어대사전에 등재된 표준어가 아니다. 단, <b>'할 일이 없어 지루하고 무료하다'</b>는 의미의 '심심하다'와는 동음이의어이므로 문맥에 따라 구분해 써야 한다.
+  </div>
+  <div class="spell-box">
+    <div class="spell-item spell-wrong">
+      <div class="spell-label">❌ 비표준어</div>
+      <div class="spell-word">슴슴하다</div>
+      <div class="spell-note">사전 미등재</div>
+    </div>
+    <div class="spell-item spell-right">
+      <div class="spell-label">✅ 표준어</div>
+      <div class="spell-word">심심하다</div>
+      <div class="spell-note">= 삼삼하다</div>
+    </div>
+  </div>
+  <div class="know-more">'심심하다'는 ① 맛이 싱겁다, ② 지루하다 두 가지 뜻을 가진 동음이의어다. "냉면 국물이 심심하다"처럼 음식에 쓰이면 전자, "오늘 심심하다"처럼 쓰이면 후자다.</div>
+</article>
+
+<!-- ── 마켓 섹션 ── -->
+<div class="section-label" id="m1">📊 Daily Market Insights · 2026.04.22</div>
+
+<!-- M1 호르무즈 -->
+<article class="card c-orange" id="m1-card">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">지정학·물류</span>
+      <span class="card-num">M1</span>
+    </div>
+    <div class="card-title">발 묶인 선박 26척 이동 재개… 호르무즈 물류 '숨통'</div>
+  </div>
+  <div class="card-body">
+    호르무즈 해협 긴장이 일부 완화되면서 억류·대기 중이던 한국 선박 <b>26척</b>이 항해를 재개했다. 정유사들은 원유 수급 불안 해소에 안도하며 가동률 정상화에 돌입 중이다. 공급망 마비 우려로 치솟았던 정유·화학 섹터의 '공포 프리미엄'이 제거되는 국면으로, 물류 비용 절감에 따라 수출 대형주 전반의 투자 심리도 회복될 전망이다.
+  </div>
+  <div class="know-more">리스크가 '최악'을 지났다는 신호다. 유가 안정은 인플레이션 압박을 낮춰 한국은행의 금리 결정에 유연성을 제공하며, 내수 소비재 섹터 반등의 기폭제가 될 수 있다.</div>
+</article>
+
+<!-- M2 코스피 최고치 -->
+<article class="card c-purple">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">반도체·증시</span>
+      <span class="card-num">M2</span>
+    </div>
+    <div class="card-title">"전쟁 이긴 실적"… 코스피 6,380 돌파, 골드만 목표 8,000</div>
+  </div>
+  <div class="card-body">
+    반도체 수출 호조와 역대급 영업이익 전망에 힘입어 코스피가 <b>6,380선</b>을 넘어 종가 기준 사상 최고치를 기록했다. <b>골드만삭스</b>는 코스피 목표치를 <b>8,000선</b>으로 상향 조정했으며, 삼성전자·SK하이닉스 주도로 외국인 자금이 패시브·액티브 구분 없이 유입 중이다.
+  </div>
+  <div class="know-more">지정학 리스크보다 '실적의 힘'이 강력함을 입증한 장세다. 낸드 가격 급등·HBM 공급 부족 등 업황 지속성에 무게를 둔 보유 전략이 당분간 유효할 것으로 보인다.</div>
+</article>
+
+<!-- M3 배터리 동맹 -->
+<article class="card c-gold">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">이차전지·모빌리티</span>
+      <span class="card-num">M3</span>
+    </div>
+    <div class="card-title">벤츠와 '배터리 동맹'… 삼성SDI·LG엔솔 시총 상단 복귀</div>
+  </div>
+  <div class="card-body">
+    메르세데스-벤츠와의 차세대 배터리 대규모 공급 계약 소식에 이차전지 대형주들이 급등하며 시총 순위 상단으로 복귀했다. 반도체에 쏠렸던 수급이 이차전지 섹터로 분산되며 코스피·코스닥 동반 상승을 이끄는 <b>쌍두마차 체제</b>가 구축됐다.
+  </div>
+  <div class="know-more">글로벌 완성차 업체와의 결속은 단순 수주를 넘어 기술 표준 선점을 의미한다. 실적 가시성이 확보된 대형 배터리 셀 업체와 핵심 소재주 위주의 선별적 접근이 유효하다.</div>
+</article>
+
+<!-- M4 에너지 -->
+<article class="card c-teal">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">에너지·인프라</span>
+      <span class="card-num">M4</span>
+    </div>
+    <div class="card-title">영국 에너지 전환 가속… 국내 원전·신재생 기자재 '러브콜'</div>
+  </div>
+  <div class="card-body">
+    중동 리스크 장기화에 대응해 영국 등 유럽 국가들이 재생에너지 및 원전 비중 확대를 선언하면서, 기술력을 갖춘 국내 원전 기자재·송배전 업체들의 수주 가능성이 높아졌다. 에너지 안보가 국가 화두로 부상하며 전력 인프라 섹터의 <b>장기 수주 사이클</b>이 시작되는 분위기다.
+  </div>
+  <div class="know-more">일시적 테마가 아닌 구조적 변화다. 미국 인프라 투자에 이어 유럽발 에너지 전환 수요까지 더해지며 'K-전력' 섹터는 실적 성장세가 가장 뚜렷한 주도주 지위를 굳혀갈 전망이다.</div>
+</article>
+
+<!-- M5 환율 -->
+<article class="card c-blue">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">외환·수급</span>
+      <span class="card-num">M5</span>
+    </div>
+    <div class="card-title">환율 1,470원대 하향 안정… 외국인 '바이 코리아'의 토대</div>
+  </div>
+  <div class="card-body">
+    수출 호조와 수급 개선으로 원/달러 환율이 <b>1,470원 초반대</b>까지 내려오며 안정세를 보이고 있다. 글로벌 IB들은 원화 가치의 추가 상승 가능성을 점치고 있으며, 환율 하락은 외국인 투자자에게 환차익 기회를 제공해 한국 시장으로의 자금 유입을 가속화한다.
+  </div>
+  <div class="stat-row">
+    <div class="stat-item">
+      <span class="stat-val">1,470</span>
+      <span class="stat-label">원/달러 환율(원)</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">↓ 하향</span>
+      <span class="stat-label">안정 추세</span>
+    </div>
+  </div>
+  <div class="know-more">고환율 리스크 해소는 환율 변동성에 취약했던 내수주·수입 비중 높은 소재 업종의 하방 경직성을 확보해 준다. 외국인 수급이 견조한 대형주 중심의 집중 전략이 유효한 구간이다.</div>
+</article>
+
+<!-- 애널리스트 코멘트 -->
+<article class="card c-slate">
+  <div class="card-header">
+    <div class="card-meta">
+      <span class="card-tag">Analyst's Conclusion</span>
+    </div>
+    <div class="card-title">압도적 실적 + 공급망 안정… 랠리는 거품이 아니다</div>
+  </div>
+  <div class="quote-box">
+    <div class="quote-text">"지수가 사상 최고치를 경신했음에도 골드만삭스 등이 목표치를 8,000선으로 높인 것은, 현재 상승이 거품이 아닌 이익 성장에 기반하고 있다는 증거다."</div>
+    <div class="quote-src">— Daily Market Insights 2026.04.22</div>
+  </div>
+  <div class="card-body">
+    반도체(실적)와 이차전지(수주)가 지수를 지지하고, 유럽발 수혜가 예상되는 전력 인프라 섹터가 수익률을 제고하는 장세가 당분간 이어질 전망이다. 지수의 '높이'에 겁내기보다 수출 지표·수주 공시 등 <b>객관적 데이터를 나침반 삼아</b> 주도주를 보유하는 전략이 권장된다.
+  </div>
+</article>
+
+</main>
+
+<!-- ── 푸터 ── -->
+<footer class="site-footer">
   신문에서 알게 된 것들을 함께 나눕니다.<br>
-  유신@JKY · 2026.04.21
+  유신@JKY · 2026.04.22
 </footer>
 
 </body>
