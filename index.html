@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.04.30">
-<meta property="og:description" content="3억 노후준비 / 빚투 2배 급증 / UAE OPEC 탈퇴 / 한일 방산 맞대결 / 주민센터 보이스피싱 / 연준 3연속 동결">
-<meta property="og:site_name" content="유신 아침 뉴스 브리핑">
-<title>아침 뉴스 브리핑 2026.04.30</title>
+<title>📰 아침 뉴스 브리핑 2026.05.06</title>
+<meta property="og:title" content="📰 아침 뉴스 브리핑 2026.05.06">
+<meta property="og:description" content="5세대 실손보험 출시 · 호르무즈 美이란 격돌 · 맥도날드 영업이익 523% · 코스피 7천피 · 부동산 전망 72% 상승">
+<meta property="og:site_name" content="아침 뉴스 브리핑">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f0f2f6;
@@ -17,566 +18,639 @@
     --text-secondary: #2c3348;
     --text-muted: #7a8499;
     --radius: 14px;
-    --c-red: #c0392b;
-    --c-blue: #2c5f8a;
-    --c-green: #1e7e6e;
-    --c-orange: #b05a00;
-    --c-purple: #6d3fad;
-    --c-gold: #a07840;
-    --c-slate: #4a5568;
-    --c-teal: #1a6f8a;
-    --c-rose: #a0304a;
-    --c-sky: #1a6fd4;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; color: var(--text-primary); }
+  body { font-family: 'Noto Sans KR', sans-serif; background: var(--bg); color: var(--text-primary); font-size: 14px; }
 
-  /* HEADER */
+  /* 컬러 클래스 */
+  .c-red    { --cc: #c0392b; }
+  .c-blue   { --cc: #2c5f8a; }
+  .c-green  { --cc: #1e7e6e; }
+  .c-orange { --cc: #b05a00; }
+  .c-purple { --cc: #6d3fad; }
+  .c-gold   { --cc: #a07840; }
+  .c-slate  { --cc: #4a5568; }
+  .c-teal   { --cc: #1a6f8a; }
+  .c-sky    { --cc: #1a6fd4; }
+
+  /* 헤더 */
   .site-header {
     position: sticky; top: 0; z-index: 100;
-    background: var(--accent);
-    padding: 12px 16px;
-    display: flex; justify-content: space-between; align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,.18);
+    background: #0d1117;
+    padding: 14px 18px 10px;
   }
-  .hd-left { display: flex; flex-direction: column; gap: 2px; }
-  .hd-eyebrow { font-size: 10px; color: rgba(255,255,255,.7); letter-spacing: .08em; text-transform: uppercase; }
-  .hd-title { font-size: 16px; font-weight: 700; color: #fff; }
-  .hd-right { text-align: right; }
-  .hd-date { font-size: 13px; color: rgba(255,255,255,.85); font-weight: 600; }
-  .hd-author { font-size: 11px; color: rgba(255,255,255,.55); margin-top: 2px; }
+  .header-inner { max-width: 560px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; }
+  .header-left .eyebrow { font-size: 10px; color: #8b949e; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
+  .header-left .title { font-size: 17px; font-weight: 700; color: #fff; }
+  .header-left .title span { color: #58a6ff; }
+  .header-right { text-align: right; }
+  .header-right .date { font-size: 11px; color: #8b949e; line-height: 1.6; }
 
-  /* CHIP BAR */
-  .chip-bar {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 8px 12px;
-    overflow-x: auto; white-space: nowrap;
-    display: flex; gap: 6px;
+  /* 칩 바 */
+  .chips-bar {
+    background: #161b26;
+    padding: 8px 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
-  .chip-bar::-webkit-scrollbar { display: none; }
+  .chips-bar::-webkit-scrollbar { display: none; }
+  .chip-inner { max-width: 560px; margin: 0 auto; display: inline-flex; gap: 6px; }
   .chip {
-    display: inline-flex; align-items: center; gap: 4px;
-    padding: 4px 10px; border-radius: 99px;
-    font-size: 12px; font-weight: 600; text-decoration: none;
-    border: 1px solid; cursor: pointer; white-space: nowrap;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #cdd5e0;
+    background: rgba(255,255,255,.07);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .15s;
   }
-  .ch-green  { color:var(--c-green);  background:color-mix(in srgb,var(--c-green)  10%,transparent); border-color:color-mix(in srgb,var(--c-green)  30%,transparent); }
-  .ch-blue   { color:var(--c-blue);   background:color-mix(in srgb,var(--c-blue)   10%,transparent); border-color:color-mix(in srgb,var(--c-blue)   30%,transparent); }
-  .ch-orange { color:var(--c-orange); background:color-mix(in srgb,var(--c-orange) 10%,transparent); border-color:color-mix(in srgb,var(--c-orange) 30%,transparent); }
-  .ch-red    { color:var(--c-red);    background:color-mix(in srgb,var(--c-red)    10%,transparent); border-color:color-mix(in srgb,var(--c-red)    30%,transparent); }
-  .ch-teal   { color:var(--c-teal);   background:color-mix(in srgb,var(--c-teal)   10%,transparent); border-color:color-mix(in srgb,var(--c-teal)   30%,transparent); }
-  .ch-slate  { color:var(--c-slate);  background:color-mix(in srgb,var(--c-slate)  10%,transparent); border-color:color-mix(in srgb,var(--c-slate)  30%,transparent); }
-  .ch-gold   { color:var(--c-gold);   background:color-mix(in srgb,var(--c-gold)   10%,transparent); border-color:color-mix(in srgb,var(--c-gold)   30%,transparent); }
-  .ch-purple { color:var(--c-purple); background:color-mix(in srgb,var(--c-purple) 10%,transparent); border-color:color-mix(in srgb,var(--c-purple) 30%,transparent); }
-  .ch-rose   { color:var(--c-rose);   background:color-mix(in srgb,var(--c-rose)   10%,transparent); border-color:color-mix(in srgb,var(--c-rose)   30%,transparent); }
-  .ch-sky    { color:var(--c-sky);    background:color-mix(in srgb,var(--c-sky)    10%,transparent); border-color:color-mix(in srgb,var(--c-sky)    30%,transparent); }
+  .chip:hover { background: rgba(255,255,255,.15); }
 
-  /* FEED */
-  .feed { max-width: 560px; margin: 0 auto; padding: 16px 12px 40px; display: flex; flex-direction: column; gap: 14px; }
+  /* 피드 */
+  .feed { max-width: 560px; margin: 0 auto; padding: 16px 12px 40px; display: flex; flex-direction: column; gap: 12px; }
 
-  /* SECTION DIVIDER */
-  .section-divider {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 12px; font-weight: 700; color: var(--text-muted);
-    letter-spacing: .06em; text-transform: uppercase;
-    margin: 4px 0 -4px;
+  /* 섹션 구분 레이블 */
+  .section-label {
+    font-size: 11px; font-weight: 700; color: var(--text-muted);
+    letter-spacing: .1em; text-transform: uppercase;
+    padding: 4px 2px; border-bottom: 1px solid var(--border);
   }
-  .section-divider::before, .section-divider::after { content:''; flex:1; height:1px; background:var(--border); }
 
-  /* CARD */
-  .card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06); }
-  .c-green  { --cc: var(--c-green);  }
-  .c-blue   { --cc: var(--c-blue);   }
-  .c-orange { --cc: var(--c-orange); }
-  .c-red    { --cc: var(--c-red);    }
-  .c-teal   { --cc: var(--c-teal);   }
-  .c-slate  { --cc: var(--c-slate);  }
-  .c-gold   { --cc: var(--c-gold);   }
-  .c-purple { --cc: var(--c-purple); }
-  .c-rose   { --cc: var(--c-rose);   }
-  .c-sky    { --cc: var(--c-sky);    }
-
-  .card-header { position:relative; padding:12px 14px 10px 18px; border-bottom:1px solid var(--border); }
-  .card-header::before { content:''; position:absolute; top:0; left:0; width:4px; height:100%; background:var(--cc); }
-  .card-meta { display:flex; align-items:center; gap:6px; margin-bottom:5px; }
+  /* 카드 */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .card-header {
+    position: relative;
+    padding: 13px 14px 11px 18px;
+    border-bottom: 1px solid color-mix(in srgb, var(--cc) 12%, transparent);
+  }
+  .card-header::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 4px; height: 100%; background: var(--cc);
+  }
+  .card-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; flex-wrap: wrap; }
   .card-tag {
-    font-size:10px; font-weight:700; letter-spacing:.05em;
-    padding:2px 7px; border-radius:99px;
-    color:var(--cc);
-    background:color-mix(in srgb,var(--cc) 10%,transparent);
-    border:1px solid color-mix(in srgb,var(--cc) 30%,transparent);
+    font-size: 10px; font-weight: 700;
+    color: var(--cc);
+    background: color-mix(in srgb, var(--cc) 10%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cc) 30%, transparent);
+    border-radius: 20px; padding: 2px 8px; letter-spacing: .04em;
   }
-  .card-num { font-size:11px; font-weight:700; color:var(--cc); }
-  .card-src { font-size:10px; color:var(--text-muted); margin-left:auto; }
-  .card-title { font-size:15px; font-weight:700; color:var(--text-primary); line-height:1.4; }
+  .card-num { font-size: 10px; color: var(--text-muted); font-weight: 600; }
+  .card-source { font-size: 10px; color: var(--text-muted); margin-left: auto; }
+  .card-title { font-size: 14px; font-weight: 700; color: var(--text-primary); line-height: 1.45; }
 
-  .card-body { padding:12px 14px; font-size:13.5px; line-height:1.7; color:var(--text-secondary); }
-  .card-body b { color:var(--text-primary); font-weight:700; }
+  /* 본문 */
+  .card-body { padding: 12px 14px; }
+  .card-text { font-size: 13px; color: var(--text-secondary); line-height: 1.75; }
+  .card-text b { color: var(--text-primary); font-weight: 700; }
 
-  /* STAT ROW */
-  .stat-row { display:flex; gap:8px; margin:10px 0; flex-wrap:wrap; }
-  .stat-item { flex:1; min-width:80px; padding:8px 10px; border-radius:10px; text-align:center; background:color-mix(in srgb,var(--cc) 6%,transparent); border:1px solid color-mix(in srgb,var(--cc) 20%,transparent); }
-  .stat-val { display:block; font-size:20px; font-weight:800; color:var(--cc); }
-  .stat-label { display:block; font-size:10px; color:var(--text-muted); margin-top:2px; }
+  /* 시사점 */
+  .know-more {
+    padding: 10px 14px;
+    background: color-mix(in srgb, var(--cc) 5%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--cc) 18%, transparent);
+  }
+  .know-label { font-size: 10px; font-weight: 700; color: var(--cc); margin-bottom: 4px; letter-spacing: .05em; }
+  .know-text { font-size: 12px; color: var(--text-secondary); line-height: 1.65; }
+  .know-text b { color: var(--text-primary); }
 
-  /* COMPARE TABLE */
-  .compare-table { margin:10px 0; border-radius:10px; overflow:hidden; border:1px solid var(--border); font-size:12.5px; }
-  .cmp-head { display:grid; grid-template-columns:1fr 1fr; }
-  .cmp-head-cell { padding:7px 10px; font-weight:700; font-size:12px; text-align:center; }
-  .cmp-ok  { background:color-mix(in srgb,var(--c-green) 15%,transparent); color:var(--c-green); }
-  .cmp-bad { background:color-mix(in srgb,var(--c-red)   15%,transparent); color:var(--c-red);   }
-  .cmp-row { display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--border); }
-  .cmp-cell { padding:7px 10px; line-height:1.45; }
-  .cmp-cell.ok  { background:color-mix(in srgb,var(--c-green) 5%,transparent); }
-  .cmp-cell.bad { background:color-mix(in srgb,var(--c-red)   5%,transparent); border-left:1px solid var(--border); }
+  /* 통계 박스 */
+  .stat-row { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 14px 2px; }
+  .stat-item {
+    flex: 1; min-width: 80px;
+    background: color-mix(in srgb, var(--cc) 6%, transparent);
+    border: 1px solid color-mix(in srgb, var(--cc) 20%, transparent);
+    border-radius: 10px; padding: 9px 10px; text-align: center;
+  }
+  .stat-val { display: block; font-size: 17px; font-weight: 700; color: var(--cc); line-height: 1.2; }
+  .stat-label { display: block; font-size: 10px; color: var(--text-muted); margin-top: 3px; line-height: 1.3; }
 
-  /* BAR LIST */
-  .bar-list { margin:10px 0; display:flex; flex-direction:column; gap:6px; }
-  .bar-row { display:flex; align-items:center; gap:8px; font-size:12px; }
-  .bar-name { min-width:80px; color:var(--text-secondary); font-weight:600; }
-  .bar-track { flex:1; background:var(--bg); border-radius:99px; height:22px; overflow:hidden; }
-  .bar-fill { height:100%; border-radius:99px; display:flex; align-items:center; padding-left:8px; }
-  .bar-val { font-size:11px; font-weight:700; color:#fff; }
+  /* 비교표 */
+  .compare-table { margin: 10px 14px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .cmp-head { display: flex; }
+  .cmp-head-cell { flex: 1; padding: 7px 10px; font-size: 11px; font-weight: 700; text-align: center; }
+  .cmp-ok { background: #e8f5e9; color: #2e7d32; }
+  .cmp-bad { background: #fdecea; color: #c62828; }
+  .cmp-row { display: flex; border-top: 1px solid var(--border); }
+  .cmp-row:nth-child(even) { background: #f9fafc; }
+  .cmp-cell { flex: 1; padding: 7px 10px; font-size: 12px; color: var(--text-secondary); line-height: 1.4; }
+  .cmp-cell.ok { border-right: 1px solid var(--border); }
 
-  /* RULE LIST */
-  .rule-list { margin:10px 0; display:flex; flex-direction:column; gap:6px; }
-  .rule-item { display:flex; align-items:flex-start; gap:8px; font-size:12.5px; line-height:1.5; color:var(--text-secondary); }
-  .rule-badge { font-size:10px; font-weight:700; padding:2px 7px; border-radius:99px; white-space:nowrap; flex-shrink:0; margin-top:2px; }
-  .rb-ok  { background:color-mix(in srgb,var(--c-green) 15%,transparent); color:var(--c-green); }
-  .rb-no  { background:color-mix(in srgb,var(--c-red)   15%,transparent); color:var(--c-red);   }
-  .rb-warn { background:color-mix(in srgb,var(--c-orange) 15%,transparent); color:var(--c-orange); }
+  /* 바 차트 */
+  .bar-list { padding: 10px 14px 4px; display: flex; flex-direction: column; gap: 7px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; }
+  .bar-name { font-size: 11px; color: var(--text-muted); white-space: nowrap; min-width: 80px; }
+  .bar-track { flex: 1; background: #eef0f5; border-radius: 4px; overflow: hidden; height: 22px; }
+  .bar-fill { height: 100%; display: flex; align-items: center; padding: 0 8px; border-radius: 4px; min-width: 30px; }
+  .bar-val { font-size: 10px; font-weight: 700; color: #fff; }
 
-  /* WORD HERO (맞춤법 박스) */
-  .word-hero { margin:10px 0; border-radius:10px; overflow:hidden; border:1px solid color-mix(in srgb,var(--cc) 25%,transparent); }
-  .word-hero-head { padding:8px 12px; background:color-mix(in srgb,var(--cc) 12%,transparent); font-size:11px; font-weight:700; color:var(--cc); letter-spacing:.05em; }
-  .word-pair { display:grid; grid-template-columns:1fr 1fr; }
-  .word-cell { padding:10px 12px; font-size:13px; font-weight:700; text-align:center; }
-  .word-wrong { background:color-mix(in srgb,var(--c-red) 8%,transparent); color:var(--c-red); text-decoration:line-through; }
-  .word-right { background:color-mix(in srgb,var(--c-green) 8%,transparent); color:var(--c-green); border-left:1px solid var(--border); }
-  .word-examples { padding:8px 12px; font-size:12px; line-height:1.65; color:var(--text-secondary); border-top:1px solid var(--border); background:var(--surface); }
+  /* 규칙 배지 */
+  .rule-list { padding: 10px 14px 4px; display: flex; flex-direction: column; gap: 6px; }
+  .rule-item { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+  .rule-badge { flex-shrink: 0; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 12px; margin-top: 1px; }
+  .rb-ok { background: #e8f5e9; color: #2e7d32; }
+  .rb-no { background: #fdecea; color: #c62828; }
+  .rb-warn { background: #fff8e1; color: #f57f17; }
 
-  /* KNOW MORE */
-  .know-more { padding:10px 14px; font-size:12.5px; line-height:1.65; color:var(--text-secondary); background:color-mix(in srgb,var(--cc) 5%,transparent); border-top:1px solid color-mix(in srgb,var(--cc) 18%,transparent); }
-  .know-more-label { font-size:10px; font-weight:700; color:var(--cc); letter-spacing:.05em; margin-bottom:4px; }
+  /* 맞춤법 박스 */
+  .spell-box { margin: 10px 14px; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .spell-row { display: flex; }
+  .spell-cell { flex: 1; padding: 10px 12px; text-align: center; }
+  .spell-cell.wrong { background: #fdecea; }
+  .spell-cell.right { background: #e8f5e9; }
+  .spell-word { font-size: 20px; font-weight: 700; }
+  .spell-cell.wrong .spell-word { color: #c62828; text-decoration: line-through; }
+  .spell-cell.right .spell-word { color: #2e7d32; }
+  .spell-desc { font-size: 10px; color: var(--text-muted); margin-top: 3px; }
 
-  /* ALERT BOX */
-  .alert-box { margin:10px 0; padding:10px 12px; border-radius:10px; background:color-mix(in srgb,var(--c-red) 8%,transparent); border:1px solid color-mix(in srgb,var(--c-red) 25%,transparent); font-size:12.5px; line-height:1.6; color:var(--text-secondary); }
-  .alert-box b { color:var(--c-red); }
+  /* 인용구 */
+  .quote-box {
+    margin: 10px 14px;
+    background: color-mix(in srgb, var(--cc) 5%, transparent);
+    border-left: 3px solid var(--cc);
+    border-radius: 0 8px 8px 0;
+    padding: 10px 12px;
+  }
+  .quote-text { font-size: 13px; color: var(--text-primary); font-style: italic; line-height: 1.6; }
+  .quote-src { font-size: 11px; color: var(--text-muted); margin-top: 5px; }
 
-  /* ANALYST BOX */
-  .analyst-box { background:var(--accent); border-radius:var(--radius); padding:16px; color:#fff; }
-  .analyst-box .a-label { font-size:10px; font-weight:700; color:rgba(255,255,255,.6); letter-spacing:.08em; margin-bottom:6px; }
-  .analyst-box .a-title { font-size:14px; font-weight:700; margin-bottom:8px; line-height:1.4; }
-  .analyst-box .a-body { font-size:12.5px; line-height:1.7; color:rgba(255,255,255,.85); }
+  /* 푸터 */
+  .page-footer {
+    text-align: center;
+    padding: 30px 20px 40px;
+    font-size: 11px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  .page-footer strong { color: var(--text-secondary); }
 
-  /* FOOTER */
-  .page-footer { text-align:center; font-size:11px; color:var(--text-muted); padding:24px 16px 32px; }
-
-  @media (min-width:600px) {
-    .feed { padding:20px 16px 48px; }
-    .card-title { font-size:16px; }
-    .card-body { font-size:14px; }
-    .stat-val { font-size:22px; }
+  @media (min-width: 600px) {
+    body { font-size: 15px; }
+    .card-title { font-size: 15px; }
+    .card-text { font-size: 14px; }
+    .know-text { font-size: 13px; }
+    .stat-val { font-size: 19px; }
   }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="hd-left">
-    <span class="hd-eyebrow">▎ 아침 뉴스 브리핑</span>
-    <span class="hd-title">오늘의 신문 읽기</span>
+<!-- 헤더 -->
+<div class="site-header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="eyebrow">▎ 아침 뉴스 브리핑</div>
+      <div class="title">오늘의 <span>신문 읽기</span></div>
+    </div>
+    <div class="header-right">
+      <div class="date">2026년 5월 6일 (수)<br>종합 · 시장 인사이트</div>
+    </div>
   </div>
-  <div class="hd-right">
-    <div class="hd-date">2026.04.30 목</div>
-    <div class="hd-author">유신@JKY</div>
+</div>
+
+<!-- 칩 바 -->
+<div class="chips-bar">
+  <div class="chip-inner">
+    <a class="chip" href="#n1">🔵 실손보험</a>
+    <a class="chip" href="#n2">🟦 청년주거</a>
+    <a class="chip" href="#n3">🟡 햄버거</a>
+    <a class="chip" href="#n4">🔴 호르무즈</a>
+    <a class="chip" href="#n5">🔴 美이란</a>
+    <a class="chip" href="#n6">🔵 시민보험</a>
+    <a class="chip" href="#n7">🟡 코스피</a>
+    <a class="chip" href="#n8">🟠 부동산</a>
+    <a class="chip" href="#n9">⬛ 선거공약</a>
+    <a class="chip" href="#n10">💬 우리말</a>
+    <a class="chip" href="#m1">🟣 반도체</a>
+    <a class="chip" href="#m2">🟠 리츠</a>
+    <a class="chip" href="#m3">🟡 코스피전망</a>
+    <a class="chip" href="#m4">🟡 소부장</a>
+    <a class="chip" href="#m5">🟣 연기금</a>
   </div>
-</header>
+</div>
 
-<!-- CHIP BAR -->
-<nav class="chip-bar">
-  <a class="chip ch-green"  href="#n1">🟢 노후 3억</a>
-  <a class="chip ch-orange" href="#n2">🟠 빚투 급증</a>
-  <a class="chip ch-red"    href="#n3">🔴 UAE·OPEC</a>
-  <a class="chip ch-teal"   href="#n4">🟦 한일 방산</a>
-  <a class="chip ch-slate"  href="#n5">⬛ 싱가포르 체벌</a>
-  <a class="chip ch-blue"   href="#n6">🔵 고시원 소외</a>
-  <a class="chip ch-rose"   href="#n7">🩷 트럼프 여권</a>
-  <a class="chip ch-slate"  href="#n8">⬛ 체험학습 면책</a>
-  <a class="chip ch-red"    href="#n9">🔴 보이스피싱</a>
-  <a class="chip ch-sky"    href="#n10">💬 우리말</a>
-  <a class="chip ch-gold"   href="#m1">📊 마켓</a>
-</nav>
+<!-- 피드 -->
+<div class="feed">
 
-<!-- FEED -->
-<main class="feed">
+  <div class="section-label">📰 오늘의 종합 뉴스</div>
 
-  <div class="section-divider">📰 오늘의 신문</div>
-
-  <!-- CARD 1: 노후 3억 -->
-  <article class="card c-green" id="n1">
+  <!-- 1. 5세대 실손보험 -->
+  <div class="card c-blue" id="n1">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">재테크·노후</span>
+        <span class="card-tag">정책·제도</span>
         <span class="card-num">#1</span>
-        <span class="card-src">중앙일보</span>
+        <span class="card-source">중앙일보</span>
       </div>
-      <div class="card-title">3억이면 노후 준비 가능? — 6% 배당 포트폴리오의 현실</div>
+      <div class="card-title">5세대 실손보험 출시 — 도수치료·주사제 빠지고 보험료 최대 50% 인하</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">50%↓</span>
+        <span class="stat-label">보험료 최대 인하</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">10%</span>
+        <span class="stat-label">상위 가입자</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">74%</span>
+        <span class="stat-label">보험금 독식 비율</span>
+      </div>
     </div>
     <div class="card-body">
-      '연금 1타 강사' 박동호 당연투자자문 대표는 <b>혼자라면 3억, 부부라면 6~7억 원</b>으로 연 6% 배당 포트폴리오를 구성하면 원금을 건드리지 않고 적정 노후 생활비(부부 월 300만 원, 개인 월 200만 원)를 평생 충당할 수 있다고 주장한다. 흔히 노후 준비에 20~30억 원이 필요하다고 알려진 것과 대조적이다. 핵심은 원금 소진 없이 배당 수익만으로 생활비를 충당하는 <b>'배당 생활자' 전략</b>이다.
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">3억</span><span class="stat-label">1인 노후 필요 원금(주장)</span></div>
-        <div class="stat-item"><span class="stat-val">6~7억</span><span class="stat-label">부부 노후 필요 원금(주장)</span></div>
-        <div class="stat-item"><span class="stat-val">6%</span><span class="stat-label">목표 배당 수익률</span></div>
-      </div>
+      <p class="card-text">오늘(5월 6일) 출시된 <b>5세대 실손보험</b>은 과잉의료의 주범으로 지목된 <b>도수치료·비급여 주사제</b> 보장을 제외하는 대신, 보험료를 기존 대비 <b>30% 이상</b> 낮춘 상품이다. 상위 10%의 가입자가 전체 보험금의 <b>74%</b>를 수령해온 구조적 형평성 문제가 이번 개편의 핵심 배경이다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 냉정하게 따져보면</div>
-      연 6% 안정적 배당을 평생 유지하는 포트폴리오를 실제로 구성하기는 쉽지 않다. 물가 상승률(연 2~3%)을 감안하면 실질 생활비는 매년 오르는데 배당금이 이를 따라가지 못하면 원금 침식이 발생한다. '가능하다'는 주장 자체는 수학적으로 성립하지만, 6% 배당을 장기 유지할 수 있는 자산 선택과 리밸런싱 역량이 전제 조건임을 인식해야 한다.
+      <div class="know-label">💡 알아두면 좋은 것</div>
+      <div class="know-text">비급여 항목을 많이 이용하지 않는 '선량한' 다수에게는 <b>보험료 절감 효과</b>가 크다. 반면 도수치료나 주사 치료를 자주 받는 경우엔 보장 범위 축소가 불리할 수 있어, 가입 전 자신의 의료 이용 패턴을 먼저 점검해야 한다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 2: 빚투 -->
-  <article class="card c-orange" id="n2">
+  <!-- 2. 호텔→청년 임대주택 -->
+  <div class="card c-teal" id="n2">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">금융·리스크</span>
+        <span class="card-tag">교통·도시</span>
         <span class="card-num">#2</span>
-        <span class="card-src">헤럴드경제</span>
+        <span class="card-source">동아일보</span>
       </div>
-      <div class="card-title">'빚내서 투자', 1년 새 2배 급증 — 사회적 리스크 될 수도</div>
+      <div class="card-title">공실 호텔을 청년 임대주택으로 — 입주 경쟁률 100대 1 초과</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">2,000채</span>
+        <span class="stat-label">공급 목표</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">100:1</span>
+        <span class="stat-label">입주 경쟁률</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">2028</span>
+        <span class="stat-label">공급 완료 목표연도</span>
+      </div>
     </div>
     <div class="card-body">
-      10대 증권사의 신용거래융자 잔고가 1년 사이 <b>14.4조 원에서 28.3조 원</b>으로 두 배 가까이 폭증했다. 증시 상승 기대와 함께, 갈수록 벌어지는 집값 격차를 주식 투자로만 극복할 수 있다는 심리가 맞물린 결과다. 레버리지 투자는 상승장에서 수익을 극대화하지만, 조정 국면에서는 <b>반대매매와 연쇄 손실</b>로 이어질 수 있어 시스템 리스크의 씨앗이 될 수 있다.
-      <div class="bar-list">
-        <div class="bar-row">
-          <div class="bar-name">1년 전</div>
-          <div class="bar-track"><div class="bar-fill" style="width:51%;background:var(--c-teal);"><span class="bar-val">14.4조</span></div></div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-name">현재</div>
-          <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--c-orange);"><span class="bar-val">28.3조 (+96%)</span></div></div>
-        </div>
-      </div>
+      <p class="card-text">국토부가 코로나19 이후 공실 상태인 <b>호텔·근린생활시설</b>을 오피스텔·기숙사 형태의 <b>준주택</b>으로 리모델링해 2028년 말까지 공공임대주택 약 <b>2,000채</b>를 공급할 계획이다. 이미 시범 사업에서 입주 경쟁률이 <b>100대 1</b>을 넘어설 만큼 청년 주거 수요가 집중되고 있다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      개인 단위의 '빚투'는 개인의 선택이지만, 이것이 시장 전반으로 확산될 때는 급락 시 반대매매 → 주가 추가 하락 → 또 다른 반대매매라는 악순환을 만들어낸다. 2008년 금융위기의 본질도 과잉 레버리지였다. 자신의 투자에 레버리지가 끼어 있는지 점검이 필요하다.
+      <div class="know-label">💡 알아두면 좋은 것</div>
+      <div class="know-text">호텔 객실 구조 특성상 1~2인 소형 가구에 최적화되어 있어 <b>사회 초년생·1인 청년 가구</b>에게 실질적 대안이 될 수 있다. 다만 2,000채는 전국 청년 주거 수요 대비 매우 소규모이므로, 보완 정책과의 병행이 중요하다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 3: UAE OPEC 탈퇴 -->
-  <article class="card c-red" id="n3">
+  <!-- 3. 햄버거 성장 -->
+  <div class="card c-gold" id="n3">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">국제·에너지</span>
+        <span class="card-tag">기업·산업</span>
         <span class="card-num">#3</span>
-        <span class="card-src">헤럴드경제</span>
+        <span class="card-source">동아일보</span>
       </div>
-      <div class="card-title">UAE, OPEC 탈퇴 — 사우디 주도 오일 카르텔 균열</div>
+      <div class="card-title">외식 불황 속 햄버거만 '나 홀로 성장' — 맥도날드 영업이익 523% 급등</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">1.43조</span>
+        <span class="stat-label">맥도날드 매출</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">+523%</span>
+        <span class="stat-label">영업이익 증가율</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">1.12조</span>
+        <span class="stat-label">롯데리아 매출</span>
+      </div>
     </div>
     <div class="card-body">
-      <b>OPEC 원유 생산 비중 13%</b>를 차지하는 UAE가 탈퇴를 선언했다. 앙골라·에콰도르·카타르 등의 탈퇴 전례가 있었지만, 이 규모의 주요 산유국이 OPEC을 이탈하는 것은 처음이다. UAE는 탈퇴 후 <b>원유 증산</b>에 나서겠다는 입장을 밝혀, 사우디 주도의 고유가 정책에 정면으로 맞서는 형국이다. OPEC의 공급 통제력이 근본적으로 흔들릴 수 있다는 분석이 나온다.
-      <div class="compare-table">
-        <div class="cmp-head">
-          <div class="cmp-head-cell cmp-ok">🇸🇦 사우디 입장</div>
-          <div class="cmp-head-cell cmp-bad">🇦🇪 UAE 입장</div>
-        </div>
-        <div class="cmp-row">
-          <div class="cmp-cell ok">감산 유지 → 고유가 방어</div>
-          <div class="cmp-cell bad">탈퇴 후 증산 → 점유율 확대</div>
-        </div>
-        <div class="cmp-row">
-          <div class="cmp-cell ok">OPEC 카르텔 결속 강조</div>
-          <div class="cmp-cell bad">자국 이익 최우선 노선</div>
-        </div>
-      </div>
+      <p class="card-text">외식업 전반이 불황인 가운데 <b>버거 업계</b>는 가성비 점심 메뉴로 수요를 흡수하며 독주하고 있다. 한국맥도날드는 2025년 매출 <b>1조 4,313억원</b>, 영업이익 <b>732억원</b>으로 전년 대비 각각 14.5%, <b>523%</b> 성장했고, 롯데리아도 매출 1조 1,189억원, 영업이익 511억원으로 각각 12.4%, 30.4% 증가했다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      UAE 증산이 현실화되면 국제 유가에 하방 압력이 가해진다. 한국처럼 에너지를 100% 수입하는 국가에는 긍정적이지만, 국내 정유·가스 관련주에는 복합적인 영향을 줄 수 있다. 유가 향방을 주시해야 할 시점이다.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">물가 상승기에 <b>'가성비 한 끼'</b>로 포지셔닝에 성공한 것이 핵심이다. 한국맥도날드의 영업이익 급증은 전년 기저효과도 감안해야 하지만, 절대 수치도 크게 개선된 것은 사실이다. 고물가·외식 불황이 지속될수록 버거 카테고리의 성장세는 이어질 가능성이 높다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 4: 한일 방산 -->
-  <article class="card c-teal" id="n4">
+  <!-- 4. 프로젝트 프리덤 압박 -->
+  <div class="card c-red" id="n4">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">방산·국제</span>
+        <span class="card-tag">국제·외교</span>
         <span class="card-num">#4</span>
-        <span class="card-src">동아일보</span>
+        <span class="card-source">중앙일보</span>
       </div>
-      <div class="card-title">'방산 시장'에서 한일 맞대결 — 일본의 본격 참전</div>
+      <div class="card-title">트럼프, 한국 콕 찍어 '프로젝트 프리덤' 동참 압박 — 첫 공개 요구</div>
     </div>
     <div class="card-body">
-      일본이 <b>살상용 무기 수출 제한을 폐지</b>하고 방산 수출 시장에 본격 뛰어들었다. 호주에 <b>호위함 11척</b> 수출을 확정했고, 동남아에 구축함 협상, 영국·이탈리아와 <b>6세대 전투기 공동 개발</b>, 미국과 드론 공동생산까지 추진 중이다. 한국이 공략 중인 시장과 상당 부분 겹쳐, 사실상 한일 방산 수출 경쟁이 본격화됐다.
-      <div class="rule-list">
-        <div class="rule-item">
-          <div class="rule-badge rb-warn">🇯🇵 일본</div>
-          호위함 11척(호주), 6세대 전투기(英·伊), 드론(美)
-        </div>
-        <div class="rule-item">
-          <div class="rule-badge rb-ok">🇰🇷 한국</div>
-          K2 전차·K9 자주포·FA-50 경공격기 등 동유럽·동남아 공략 중
-        </div>
-      </div>
+      <p class="card-text">트럼프 행정부가 한국 선박 피격이 <b>이란 소행</b>이라고 언급하며 <b>'프로젝트 프리덤'</b> 작전 동참을 한국에 처음으로 직접 요구했다. 지난 3월 호르무즈해협에 군함 파견을 요청한 적은 있으나, 이번처럼 한국만을 특정해 공개 압박한 것은 개전 이후 처음으로, 청와대는 '신중 검토' 입장을 밝혔다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      일본의 방산 수출 제한 해제는 한국 방산 수출 호황에 직접적인 도전이다. 가격 경쟁력과 납기 준수로 앞서왔던 한국이, 기술력과 브랜드 신뢰도가 높은 일본과 경쟁하려면 고부가가치 무기체계 개발과 현지화 전략 강화가 필요하다.
+      <div class="know-label">💡 알아두면 좋은 것</div>
+      <div class="know-text">한국은 호르무즈해협을 통해 원유 수입 물동량의 상당 부분을 조달한다. 동참 시 <b>이란과의 외교·경제 관계</b> 훼손이 불가피하고, 불참 시 <b>한미동맹 부담</b>으로 이어지는 전형적인 외교 딜레마 상황이다. 정부의 '신중 검토'는 사실상 시간 벌기에 가깝다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 5: 싱가포르 체벌 -->
-  <article class="card c-slate" id="n5">
+  <!-- 5. 美·이란 격돌 -->
+  <div class="card c-red" id="n5">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">교육·국제</span>
+        <span class="card-tag">국제·분쟁</span>
         <span class="card-num">#5</span>
-        <span class="card-src">동아일보</span>
+        <span class="card-source">세계일보</span>
       </div>
-      <div class="card-title">싱가포르, 학교 회초리 체벌 공식화 — 동아시아 교육 모델의 선택</div>
+      <div class="card-title">'프로젝트 프리덤' 첫날 美·이란 격돌 — 고속정 6척 격침, 휴전 붕괴 우려</div>
     </div>
     <div class="card-body">
-      싱가포르가 학교폭력 가해 학생에 대해 정학 등 행정 처벌과 함께 <b>회초리 체벌도 공식 도입</b>하기로 했다. 초등 고학년 남학생부터 적용한다. 싱가포르는 이미 성인 범죄자에게 영구 흉터를 남길 수 있는 <b>태형 제도</b>를 유지하는 국가다. 학교폭력 억제를 위한 강력한 처벌 중심 접근법으로, 서구식 회복적 생활교육과는 방향이 정반대다.
+      <p class="card-text">미국이 '프로젝트 프리덤' 작전 첫날 선박 2척을 호르무즈해협에 통과시키자 이란이 <b>순항미사일·드론·고속정 6척</b>으로 공격했고, 미 중부사령관은 이를 모두 격침·격추했다고 발표했다. 이란 혁명수비대는 미 상선의 통과 자체를 부정했으나, <b>덴마크 해운사 머스크</b>가 통과 사실을 공식 확인했다.</p>
+    </div>
+    <div class="quote-box">
+      <div class="quote-text">"이란이 발사한 순항미사일과 드론, 고속정 6척을 모두 격침했다."</div>
+      <div class="quote-src">— 미국 중부사령관 발표</div>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      체벌이 학교폭력을 줄이는지에 대한 학문적 근거는 엇갈린다. 싱가포르처럼 강력한 법 집행 문화를 가진 사회에서는 억제 효과가 나타날 수 있지만, 한국처럼 다른 사회 맥락에서 동일한 효과를 기대하기는 어렵다. 제도보다 교육 문화가 먼저라는 논점도 여전히 유효하다.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">호르무즈해협은 전 세계 원유 해상 운송량의 약 20%가 통과하는 전략적 요충지다. 분쟁이 격화될 경우 <b>국제 유가 급등</b>과 해운 보험료 폭등이 한국 경제에 직접 영향을 줄 수 있다. 상황을 면밀히 모니터링할 필요가 있다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 6: 고시원 소외 -->
-  <article class="card c-blue" id="n6">
+  <!-- 6. 시민 안전보험 -->
+  <div class="card c-blue" id="n6">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">복지·주거</span>
+        <span class="card-tag">정책·제도</span>
         <span class="card-num">#6</span>
-        <span class="card-src">세계일보</span>
+        <span class="card-source">경향신문 외</span>
       </div>
-      <div class="card-title">진짜 어려운 사람이 청년 월세 지원에서 소외되는 역설</div>
+      <div class="card-title">'시민 안전보험', 몰라서 못 받는다 — 충남 도민 10명 중 4명 "제도 모름"</div>
     </div>
     <div class="card-body">
-      고시원·쪼개기 원룸 거주자들은 건물의 법적 주거 용도 미비와 전입신고 거부 관행 때문에 <b>청년 월세 지원 대상에서 원천적으로 제외</b>된다. 정작 가장 열악한 주거 환경에 처한 청년들이 복지 사각지대에 남겨지는 구조적 역설이다. 지원 대상 기준이 '법적 주소'에 묶여 있어, 현실의 주거 취약 계층을 담아내지 못하고 있다.
+      <p class="card-text">대부분의 광역·기초 지자체가 주민세로 가입한 <b>시민 안전보험</b>은 대중교통 사고, 자연재해 등으로 피해를 입으면 <b>별도 가입 없이</b> 보상받을 수 있는 제도다. 그러나 충남의 경우 도민 10명 중 4명이 제도 자체를 모르거나 신청 방법을 몰라 혜택을 받지 못하고 있는 것으로 나타났다.</p>
+    </div>
+    <div class="rule-list">
+      <div class="rule-item">
+        <div class="rule-badge rb-ok">✅ 보상 대상</div>
+        대중교통 이용 중 상해, 자연재해 피해, 스쿨존 사고
+      </div>
+      <div class="rule-item">
+        <div class="rule-badge rb-warn">⚠️ 신청 방법</div>
+        거주 지자체 홈페이지 또는 주민센터 방문 — 자동 지급 아님, 반드시 직접 신청 필요
+      </div>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      복지 제도의 사각지대 문제는 '기준의 경직성'에서 비롯된다. 실거주 확인 방법 다양화(관리비 납부 내역, 우편물 수령 확인 등)를 통해 전입신고 없이도 지원 가능한 보완책 마련이 필요하다. 가장 취약한 사람이 가장 먼저 지원받아야 한다는 원칙이 흔들리고 있다.
+      <div class="know-label">💡 알아두면 좋은 것</div>
+      <div class="know-text">내가 사는 지자체의 <b>시민 안전보험 보장 항목</b>을 미리 확인해두면 실제 사고 발생 시 보상 청구가 가능하다. 지자체별로 보장 범위와 한도가 다르므로 거주 지역 보험 약관을 한 번쯤 확인해볼 것을 권한다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 7: 트럼프 여권 -->
-  <article class="card c-rose" id="n7">
+  <!-- 7. 코스피·개미 차익실현 -->
+  <div class="card c-gold" id="n7">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">국제·정치</span>
+        <span class="card-tag">기업·투자</span>
         <span class="card-num">#7</span>
-        <span class="card-src">문화일보</span>
+        <span class="card-source">매일경제</span>
       </div>
-      <div class="card-title">국민 여권에 자기 얼굴 넣는 트럼프 — 7월부터 한정판 발급</div>
+      <div class="card-title">7천피 근접하자 개인 18조 순매도 — 외국인은 5조 매수로 맞불</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">18조</span>
+        <span class="stat-label">개인 순매도 (1개월)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">5조</span>
+        <span class="stat-label">외국인 순매수</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">36%</span>
+        <span class="stat-label">회전율 (↓44%→)</span>
+      </div>
     </div>
     <div class="card-body">
-      미 국무부가 오는 <b>7월부터 트럼프 대통령 초상화가 표지 안쪽에 삽입된 '한정판 여권'</b>을 발급할 예정이다. 미국 건국 250주년 기념으로 발행되며, 재고가 소진될 때까지 발급된다. 한정판 수량은 미정이다. 미국 여권에 현직 대통령 초상을 삽입하는 것은 전례 없는 일이다.
+      <p class="card-text">코스피가 7,000선에 근접하자 개인 투자자들이 한 달 새 <b>18조원</b>을 순매도하며 차익 실현에 나섰다. 투자자 예탁금도 120조원대에서 증가세가 멈추고 거래 회전율도 <b>44%→36%</b>로 하락했다. 반면 외국인은 5조원을 순매수했지만 삼성전자·SK하이닉스를 제외하면 실제로는 <b>1조 순매도</b>였다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 알아두면 좋은 것</div>
-      여권은 국가가 발행하는 공식 신분증이자 외교 문서다. 현직 정치인의 얼굴을 넣는 것은 국가 상징과 개인 권력을 혼동하는 행위라는 비판이 나온다. 건국 250주년 기념이라는 명분을 내세웠지만, 미국 내에서도 논란이 예상된다.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">외국인 매수의 실체가 반도체 쏠림이라는 점은 주목할 부분이다. <b>반도체 제외 시 외국인도 순매도</b>라는 사실은 시장 전반의 매수 압력이 생각만큼 강하지 않음을 시사한다. 지수 고점 경계감은 합리적이다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 8: 체험학습 면책 -->
-  <article class="card c-slate" id="n8">
+  <!-- 8. 부동산 전망 -->
+  <div class="card c-orange" id="n8">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">교육·법제</span>
+        <span class="card-tag">에너지·부동산</span>
         <span class="card-num">#8</span>
-        <span class="card-src">문화일보</span>
+        <span class="card-source">서울경제</span>
       </div>
-      <div class="card-title">전교조, 체험학습 사고 면책 요구 — 소풍도 사라지는 학교</div>
+      <div class="card-title">부동산 전문가 72% "올해 수도권 집값 오른다" — 상승 폭 1~3% 전망 다수</div>
+    </div>
+    <div class="bar-list">
+      <div class="bar-row">
+        <div class="bar-name">상승 전망</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:72%;background:#b05a00;">
+            <span class="bar-val">72%</span>
+          </div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">보합·하락</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:28%;background:#4a5568;">
+            <span class="bar-val">28%</span>
+          </div>
+        </div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-name">1~3% 상승</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:32%;background:#a07840;">
+            <span class="bar-val">32% (최다)</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="card-body">
-      교사의 <b>89%</b>가 현장체험학습 관련 형사책임에 불안을 느낀다는 조사 결과가 나왔다. 이에 전교조는 교육활동 중 발생한 사고에 대한 <b>업무상 과실치사상 면책</b>과 소송 비용의 국가 전담을 요구하고 있다. 법적 책임 부담으로 소풍·운동회 등 현장체험학습이 줄어드는 현상이 전국적으로 확산되고 있다.
+      <p class="card-text">KB '2026 부동산 보고서'에 따르면 전문가 <b>72%</b>가 올해 수도권 집값 상승을 전망했다. 연초 1월의 <b>93%</b>와 비교하면 21%포인트 낮아진 수치이지만 여전히 절대다수가 상승을 예측하고 있으며, 상승 폭은 <b>1~3%</b>를 예상한 응답자가 32%로 가장 많았다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      완전 면책은 교육 부실 관리에 대한 무책임을 허용할 수 있다는 반론도 있다. 하지만 현 상황처럼 교사 개인에게 형사 리스크를 전부 지우는 구조는 아이들의 교육 경험 자체를 위축시킨다. '고의·중과실 외 면책'이라는 합리적 중간 지점을 찾는 입법 논의가 필요하다.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">상승 전망 비율이 연초 대비 큰 폭 하락한 것은 <b>금리·거시 불확실성</b>이 심리에 영향을 주고 있다는 신호다. 전문가 의견은 참고 지표일 뿐이며, 개인 자산 결정은 실거래가·공급량·금리 방향을 함께 살펴야 한다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 9: 보이스피싱 -->
-  <article class="card c-red" id="n9">
+  <!-- 9. 선거 공약 남발 -->
+  <div class="card c-slate" id="n9">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">생활·보안</span>
+        <span class="card-tag">사실·정치</span>
         <span class="card-num">#9</span>
-        <span class="card-src">아시아경제</span>
+        <span class="card-source">한국경제</span>
       </div>
-      <div class="card-title">주민센터 사칭 신종 보이스피싱 주의보</div>
+      <div class="card-title">상의도 없이 '삼성 공장을 우리 지역에'… 선거철 '아니면 말고' 공약 또 남발</div>
     </div>
     <div class="card-body">
-      한국인터넷진흥원(KISA)이 경보를 발령한 신종 수법이다. "<b>누군가 고객 명의로 등본·초본 발급을 시도하고 있습니다</b>"라는 문자를 주민센터 명의로 보내, 공포심을 유발한 뒤 전화·카카오톡 등 여러 채널을 통해 <b>단계적으로 접근</b>하는 것이 특징이다. 공공기관을 사칭해 신뢰도를 높인 뒤 개인정보나 금전을 요구한다.
-      <div class="alert-box">
-        ⚠️ <b>이런 문자가 오면 의심하세요</b><br>
-        "명의 도용 시도 탐지" → 링크 클릭 유도 or 콜백 요청 → 개인정보·금전 요구. 주민센터나 경찰은 카카오톡으로 연락하지 않습니다. 의심 즉시 <b>118(KISA 신고)</b> 또는 <b>112</b>로 신고하세요.
-      </div>
+      <p class="card-text">선거철이 되면 여야 후보들이 <b>기업과 사전 협의 없이</b> 반도체 공장 유치 등을 공약으로 내세우는 관행이 반복되고 있다. 기업들은 근거 없는 이전설이 돌 때마다 '난감하다'는 반응이며, 이는 4년 전과 판박이인 상황이다. <b>'공약의 질' 검증 시스템</b>이 없다는 점이 근본 문제로 지적된다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 알아두면 좋은 것</div>
-      공공기관은 문자·카카오톡으로 개인정보 확인을 요청하지 않는다. 의심스러우면 해당 기관에 직접 전화해 확인하는 것이 가장 확실한 방어다. 부모님·어르신들께 반드시 공유해 드리자.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">공약의 실현 가능성을 검증할 <b>독립적 기구나 팩트체크 시스템</b>이 제도화되지 않는 한 이 관행은 되풀이된다. 유권자 입장에서는 기업·정부의 공식 확인 없는 유치 공약을 그대로 신뢰하지 않는 비판적 시각이 필요하다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- CARD 10: 우리말 -->
-  <article class="card c-sky" id="n10">
+  <!-- 10. 우리말 바루기 -->
+  <div class="card c-sky" id="n10">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">우리말 바루기</span>
+        <span class="card-tag">우리말·교육</span>
         <span class="card-num">#10</span>
-        <span class="card-src">중앙일보</span>
+        <span class="card-source">중앙일보 우리말 바루기</span>
       </div>
-      <div class="card-title">김치를 '담궜다'? — '담갔다'가 맞습니다</div>
+      <div class="card-title">'예부터'? '옛부터'? — 품사가 다른 두 단어</div>
+    </div>
+    <div class="spell-box">
+      <div class="spell-row">
+        <div class="spell-cell wrong">
+          <div class="spell-word">옛부터</div>
+          <div class="spell-desc">❌ 잘못된 표기</div>
+        </div>
+        <div class="spell-cell right">
+          <div class="spell-word">예부터</div>
+          <div class="spell-desc">✅ 올바른 표기</div>
+        </div>
+      </div>
     </div>
     <div class="card-body">
-      '담그다'가 표준 원형이다. 많은 사람이 쓰는 <b>'담궜다'는 틀린 표현</b>으로, 이 활용형이 맞으려면 원형이 '담구다'여야 하는데 그런 단어는 사전에 없다.
-      <div class="word-hero">
-        <div class="word-hero-head">❌ 틀린 표현 → ✅ 맞는 표현</div>
-        <div class="word-pair">
-          <div class="word-cell word-wrong">담궜다</div>
-          <div class="word-cell word-right">담갔다 ✅</div>
-        </div>
-        <div class="word-pair" style="border-top:1px solid var(--border);">
-          <div class="word-cell word-wrong">1년 전 담은 김치</div>
-          <div class="word-cell word-right">1년 전 담근 김치 ✅</div>
-        </div>
-        <div class="word-examples">
-          담그고 · 담그니 · 담그면 · 담가 · 담갔다 · 담근 — 모두 '담그다' 활용
-        </div>
-      </div>
+      <p class="card-text"><b>'예'</b>는 과거를 뜻하는 <b>명사</b>로, 조사나 접사와 결합할 수 있어 '예부터'가 맞는 표현이다. 반면 <b>'옛'</b>은 <b>관형사</b>로 반드시 명사 앞에만 올 수 있어, '옛 추억', '옛 친구'처럼 뒤에 명사가 따를 때만 쓸 수 있다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 알아두면 좋은 것</div>
-      '담그다'처럼 어간이 'ㅡ'로 끝나는 동사는 모음 앞에서 'ㅡ'가 탈락한다. 담그 + 아 → 담가, 담그 + 았다 → 담갔다. 비슷한 패턴: 잠그다 → 잠가/잠갔다, 바쁘다 → 바빠/바빴다.
+      <div class="know-label">💡 기억법</div>
+      <div class="know-text">'옛'은 항상 뒤에 <b>명사(체언)</b>가 온다. 조사(-부터, -날, -적)와 바로 붙이려면 명사인 <b>'예'</b>를 써야 한다. "예부터 전해오는 옛 이야기"처럼 두 단어를 함께 쓰면 구분이 쉽다.</div>
     </div>
-  </article>
+  </div>
 
-  <!-- MARKET SECTION -->
-  <div class="section-divider">📊 Daily Market Insights</div>
+  <!-- 시장 인사이트 구분 -->
+  <div class="section-label">📊 Daily Market Insights</div>
 
-  <!-- M1: 연준 동결 -->
-  <article class="card c-blue" id="m1">
+  <!-- M1. 반도체 1조 달러 -->
+  <div class="card c-purple" id="m1">
     <div class="card-header">
       <div class="card-meta">
-        <span class="card-tag">거시·금리</span>
+        <span class="card-tag">기술·반도체</span>
         <span class="card-num">M1</span>
       </div>
-      <div class="card-title">연준 기준금리 3연속 동결 — "인플레이션이 끈질기다"</div>
+      <div class="card-title">"올해 반도체 시장 1조 달러 돌파" — 2030년엔 1.8조 달러 '초성장기'</div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item">
+        <span class="stat-val">$1조</span>
+        <span class="stat-label">2026년 시장 규모 (≈1,360조원)</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">$1.8조</span>
+        <span class="stat-label">2030년 전망</span>
+      </div>
     </div>
     <div class="card-body">
-      미 연준이 기준금리를 <b>3.50~3.75%</b>로 동결했다. 파월 의장은 인플레이션 둔화 속도가 예상보다 느리고 경제 전망의 불확실성이 여전하다고 강조했다. 금리 인하 시점이 <b>9월 이후 혹은 연내 동결</b>로 밀릴 가능성이 커졌다. 다만 추가 인상 가능성은 낮아져 증시에 안도감을 제공한다.
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">3.50%</span><span class="stat-label">현재 기준금리 하단</span></div>
-        <div class="stat-item"><span class="stat-val">3연속</span><span class="stat-label">동결 횟수</span></div>
-      </div>
+      <p class="card-text">글로벌 반도체 시장이 올해 사상 처음으로 <b>1조 달러(약 1,360조원)</b>를 돌파할 것으로 전망된다. AI 및 양자 컴퓨팅 수요 폭증이 핵심 동력으로, 2030년에는 <b>1.8조 달러</b> 규모의 초성장기 진입이 예측된다. 삼성전자·SK하이닉스의 장기 성장 펀더멘털을 재확인시켜주는 수치다.</p>
     </div>
     <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      고금리 장기화(Higher for Longer)가 뉴노멀로 굳어지는 구간이다. 금리 인하 기대에 의존한 투자 전략보다, 기업 실적이라는 펀더멘털에 집중하는 접근이 맞는 시점이다.
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">반도체는 이제 경기 사이클형 산업이 아닌 <b>인프라형 필수재</b>로 재분류되는 추세다. 단기 주가 조정을 분할 매수 기회로 삼는 장기적 관점이 유효하나, 개별 기업의 <b>HBM·AI 칩 기술력 격차</b>에 따른 선별적 접근이 필요하다.</div>
     </div>
-  </article>
-
-  <!-- M2: 반도체 500조 -->
-  <article class="card c-purple" id="m2">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">반도체·실적</span>
-        <span class="card-num">M2</span>
-      </div>
-      <div class="card-title">삼성·하이닉스 합산 영업이익 500조 전망 — 국가 예산의 75%</div>
-    </div>
-    <div class="card-body">
-      HBM 수요 확대와 반도체 가격 폭등으로 삼성전자·SK하이닉스의 올해 합산 영업이익이 <b>최대 500조 원</b>에 달할 것이라는 전망이 나왔다. 이는 2026년 국가 예산의 약 <b>75%</b>에 해당하는 수준이다. 외국인의 수급이 'K-반도체'에 집중되며 코스피 하방 경직성을 떠받치고 있다.
-      <div class="stat-row">
-        <div class="stat-item"><span class="stat-val">500조</span><span class="stat-label">합산 영업익 전망</span></div>
-        <div class="stat-item"><span class="stat-val">75%</span><span class="stat-label">국가 예산 대비 비율</span></div>
-      </div>
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      반도체는 단순 경기 사이클 산업을 넘어 국가 경제의 현금창출원이 됐다. 조정 시 비중을 늘리는 전략이 여전히 유효하다는 분석이 힘을 얻고 있다.
-    </div>
-  </article>
-
-  <!-- M3: LG엔솔 -->
-  <article class="card c-green" id="m3">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">이차전지·실적</span>
-        <span class="card-num">M3</span>
-      </div>
-      <div class="card-title">LG에너지솔루션 실적 발표 — "ESS가 구원투수 될까"</div>
-    </div>
-    <div class="card-body">
-      전기차(EV) 수요 정체 속에서 <b>에너지저장장치(ESS)</b> 출하량이 매출의 <b>약 28%</b>까지 확대됐는지가 이번 실적 발표의 핵심이다. ESS 부문의 가파른 성장이 확인되면 전기차 모멘텀 둔화를 상쇄하며 이차전지 섹터 전반의 투자 심리 반전 계기가 될 수 있다.
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      이차전지 내에서도 'EV 전용'과 'ESS 병행' 기업 간 실적 차별화가 본격화된다. 포트폴리오 다변화에 성공한 대형 셀 업체 위주로 압축하는 접근이 권장된다.
-    </div>
-  </article>
-
-  <!-- M4: 동일인 제도 -->
-  <article class="card c-gold" id="m4">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">정책·거버넌스</span>
-        <span class="card-num">M4</span>
-      </div>
-      <div class="card-title">'동일인 지정 제도' 개편 — 지주사 재평가 기회 올 수도</div>
-    </div>
-    <div class="card-body">
-      정부가 총수 일가의 독점 방지를 위한 <b>'동일인(총수) 지정 제도'</b> 개편에 착수했다. 규제 완화 시 대기업 지배구조 개편이 가속화되고 주주환원 강화로 이어질 가능성이 있다. 반면 편법 상속 수단으로 악용될 수 있다는 우려도 동시에 제기된다.
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      '밸류업 정책'과 맞물려 지배구조 개선 의지가 강하고 자산 효율성이 높은 지주사들의 재평가 기회가 생길 수 있다. 거버넌스 투명성이 높은 기업 위주로 관심을 좁히는 것이 유효하다.
-    </div>
-  </article>
-
-  <!-- M5: 압류방지통장 -->
-  <article class="card c-orange" id="m5">
-    <div class="card-header">
-      <div class="card-meta">
-        <span class="card-tag">금융·내수</span>
-        <span class="card-num">M5</span>
-      </div>
-      <div class="card-title">"망해도 250만원은 지킨다" — 압류방지 통장 가입 급증</div>
-    </div>
-    <div class="card-body">
-      생계 보호를 위한 <b>'압류방지 전용 통장'</b> 가입자가 빠르게 늘고 있다. 내수 경기 위축과 고금리 장기화로 한계에 내몰린 가계·자영업자의 고통이 수면 위로 드러나는 지표다. 은행권 연체율 관리 부담으로 이어지며 금융주 밸류에이션 상단을 제한하는 요인이 된다.
-    </div>
-    <div class="know-more">
-      <div class="know-more-label">💡 시사점</div>
-      코스피 화려한 랠리 뒤에 내수 소비 온기 부족 현상이 뚜렷하다. 글로벌 시장에서 경쟁력을 증명하는 수출 대형주 중심으로 포트폴리오를 압축하는 전략이 적절한 시점이다.
-    </div>
-  </article>
-
-  <!-- ANALYST CONCLUSION -->
-  <div class="analyst-box">
-    <div class="a-label">💡 ANALYST'S CONCLUSION</div>
-    <div class="a-title">"연준의 동결은 '상수'가 됐고, 반도체의 이익은 '변수'를 압도하고 있습니다."</div>
-    <div class="a-body">FOMC 동결은 시장이 이미 예상한 범주 안에 있습니다. 이제 시장의 시선은 LG에너지솔루션의 ESS 성장성과 반도체 500조 이익이라는 실질적 숫자로 이동하고 있습니다. 거시 지표의 불투명성에 흔들리기보다, 압도적 이익 성장을 기록 중인 반도체 주도주와 체질 개선을 시도 중인 에너지·소재주를 중심으로 포트폴리오의 질적 개선을 꾀하시길 권장합니다.</div>
   </div>
 
-</main>
+  <!-- M2. 미 리츠 실적 악화 -->
+  <div class="card c-orange" id="m2">
+    <div class="card-header">
+      <div class="card-meta">
+        <span class="card-tag">부동산·금융</span>
+        <span class="card-num">M2</span>
+      </div>
+      <div class="card-title">미 리츠 실적 악화 — 고금리 장기화, 국내 부동산 금융에도 하방 압력</div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">미국 상업용 부동산 리츠 '센터스페이스'가 1분기 <b>순손실 확대</b> 및 영업현금흐름(FFO) 하락을 발표하며 부동산 금융 심리가 위축됐다. <b>고금리 장기화</b>의 역풍으로 국내에서도 상업용 부동산 대출 비중이 높은 금융사와 리츠 섹터에 하방 압력이 가중되는 상황이다.</p>
+    </div>
+    <div class="know-more">
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">리츠 투자 시 배당 수익률보다 <b>자산의 질(Quality)</b>과 금리 민감도를 우선 따져야 한다. 부채 비율이 낮고 임대 안정성이 높은 우량 리츠로의 선별적 접근이 권장되며, 고금리 장기화 시나리오에 취약한 리츠는 주의가 필요하다.</div>
+    </div>
+  </div>
 
-<footer class="page-footer">
+  <!-- M3. 코스피 전망 -->
+  <div class="card c-gold" id="m3">
+    <div class="card-header">
+      <div class="card-meta">
+        <span class="card-tag">기업·투자</span>
+        <span class="card-num">M3</span>
+      </div>
+      <div class="card-title">코스피 5,650선 안착 후 6,000 타진 — "이익이 지수 견인하는 구조"</div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">주요 증권사들이 2026년 코스피 목표치를 <b>5,650선 이상</b>으로 상향 조정한 가운데, 반도체 중심의 기업 이익 급증이 지수 상단을 밀어 올리고 있다. 7,000선 근접에 따른 차익 실현 욕구가 강해지고 있으나, 외국인의 업종별 순환 수급이 지수 하방을 지지하는 형태다.</p>
+    </div>
+    <div class="know-more">
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">현재 장세는 버블보다 <b>'이익 기반 재평가(Re-rating)'</b> 성격이 강하다. 지수의 절대 높이에 위축되기보다, <b>12개월 선행 EPS가 우상향하는 업종</b>(반도체·조선·방산)에 집중하는 전략이 유효하다는 것이 시장의 중론이다.</div>
+    </div>
+  </div>
+
+  <!-- M4. 소부장 해외 진출 -->
+  <div class="card c-gold" id="m4">
+    <div class="card-header">
+      <div class="card-meta">
+        <span class="card-tag">기업·산업</span>
+        <span class="card-num">M4</span>
+      </div>
+      <div class="card-title">동남아 공급망 재편 — 'K-소부장' 베트남·말레이시아 진출 가속</div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">지정학적 리스크로 글로벌 반도체 공급망이 <b>동남아로 재편</b>되면서 국내 소재·부품·장비 기업들의 베트남·말레이시아 진출이 빨라지고 있다. 해외 고객사를 확보하고 현지 생산 체계를 갖춘 기업들은 <b>국내 대기업 의존도를 낮추고 글로벌 매출처 다변화</b>에 성공하고 있다.</p>
+    </div>
+    <div class="know-more">
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">소부장 기업의 경쟁력 척도가 <b>'삼성·하이닉스 납품 비율'에서 '글로벌 공급망 편입 속도'</b>로 이동하고 있다. 해외 현지 공장 가동 여부와 글로벌 고객사 다변화 수준이 중소형 소부장주 투자 시 핵심 체크포인트가 되고 있다.</div>
+    </div>
+  </div>
+
+  <!-- M5. 연기금 매수 -->
+  <div class="card c-purple" id="m5">
+    <div class="card-header">
+      <div class="card-meta">
+        <span class="card-tag">기술·금융</span>
+        <span class="card-num">M5</span>
+      </div>
+      <div class="card-title">개미 떠난 자리, 연기금이 채운다 — 고배당·저PBR 주주환원주 집중 매수</div>
+    </div>
+    <div class="card-body">
+      <p class="card-text">개인 투자자들이 약 2조원 규모 차익 실현에 나선 사이, <b>국민연금 등 기관</b>이 정부 '밸류업' 정책 수혜 예상 종목인 <b>고배당·저PBR 주식</b>을 집중 매수하고 있다. 수급 주체가 개인에서 기관·외국인으로 이동하며 시장 변동성은 낮아지고 추세적 안정성은 강화되는 구조다.</p>
+    </div>
+    <div class="know-more">
+      <div class="know-label">💡 시사점</div>
+      <div class="know-text">'스마트 머니'의 이동 방향이 성장주에서 <b>주주환원(자사주 소각·배당 확대)</b> 가치주로 전환 중이다. 반도체 랠리를 유지하면서 금융·지주사 등 <b>주주환원 강화 종목</b>을 포트폴리오의 안전판으로 일부 편입하는 바벨 전략이 제안되고 있다.</div>
+    </div>
+  </div>
+
+</div><!-- /feed -->
+
+<div class="page-footer">
   신문에서 알게 된 것들을 함께 나눕니다.<br>
-  유신@JKY · 2026.04.30
-</footer>
+  <strong>2026. 05. 06 (수) · 아침 뉴스 브리핑</strong>
+</div>
 
 </body>
 </html>
